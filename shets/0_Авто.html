@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta content='text/html; charset=windows-1251' http-equiv='Content-Type' />
+<title>ZaRulem.ws - автомобильный портал Чебоксары</title>
+<meta name='Description' content='Автопортал ZaRulem.ws - крупнейшее региональное место для общения автолюбителей Чебоксар и Чувашии'>
+<meta name="MobileOptimized"     content="640" />
+<meta name="viewport"            content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name='HandheldFriendly'    content='true'>
+<meta name='MobileOptimzied'     content='width'>
+<meta name='format-detection'    content='address=no'>
+<meta name='robots'              content='all' />
+<meta name='referrer' content='unsafe-url' />
+<link rel="image_src" href="https://zarulem.ws/default-big-original.png" />
+<link href='https://zarulem.ws' rel='canonical' />
+
+
+<link rel="yandex-tableau-widget" href="/manifest.json" />
+<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+<meta property="fb:pages" content="338028746289470" />
+
+<link href="https://cheb.ru/css/font-awesome.css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/i/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/i/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/i/fav/favicon-16x16.png">
+<link rel="manifest" href="/i/fav/site.webmanifest">
+<link rel="mask-icon" href="/i/fav/safari-pinned-tab.svg" color="#0f5293">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">	
+
+<script src="https://cheb.ru/js/jquery-1.12.4.min.js"></script>
+<link rel='stylesheet' type='text/css' href='https://cheb.ru/css/general.css?ver=2.4'>
+<link rel='stylesheet' type='text/css' href='/css/style.css?ver=2.4'>
+<link rel='stylesheet' type='text/css' href='//cheb.ru/css/order_pos.css'>
+
+<script type="text/javascript">
+window.IS_AJAX = true;
+window.IS_MOBILE = false;
+window.IS_TABLET = false;
+window.IS_ANDROID_OS = false;
+window.DEV = false;
+/*! head.load - v1.0.3 */
+;(function(n,t){"use strict";function w(){}function u(n,t){if(n){typeof n=="object"&&(n=[].slice.call(n));for(var i=0,r=n.length;i<r;i++)t.call(n,n[i],i)}}function it(n,i){var r=Object.prototype.toString.call(i).slice(8,-1);return i!==t&&i!==null&&r===n}function s(n){return it("Function",n)}function a(n){return it("Array",n)}function et(n){var i=n.split("/"),t=i[i.length-1],r=t.indexOf("?");return r!==-1?t.substring(0,r):t}function f(n){(n=n||w,n._done)||(n(),n._done=1)}function ot(n,t,r,u){var f=typeof n=="object"?n:{test:n,success:!t?!1:a(t)?t:[t],failure:!r?!1:a(r)?r:[r],callback:u||w},e=!!f.test;return e&&!!f.success?(f.success.push(f.callback),i.load.apply(null,f.success)):e||!f.failure?u():(f.failure.push(f.callback),i.load.apply(null,f.failure)),i}function v(n){var t={},i,r;if(typeof n=="object")for(i in n)!n[i]||(t={name:i,url:n[i]});else t={name:et(n),url:n};return(r=c[t.name],r&&r.url===t.url)?r:(c[t.name]=t,t)}function y(n){n=n||c;for(var t in n)if(n.hasOwnProperty(t)&&n[t].state!==l)return!1;return!0}function st(n){n.state=ft;u(n.onpreload,function(n){n.call()})}function ht(n){n.state===t&&(n.state=nt,n.onpreload=[],rt({url:n.url,type:"cache"},function(){st(n)}))}function ct(){var n=arguments,t=n[n.length-1],r=[].slice.call(n,1),f=r[0];return(s(t)||(t=null),a(n[0]))?(n[0].push(t),i.load.apply(null,n[0]),i):(f?(u(r,function(n){s(n)||!n||ht(v(n))}),b(v(n[0]),s(f)?f:function(){i.load.apply(null,r)})):b(v(n[0])),i)}function lt(){var n=arguments,t=n[n.length-1],r={};return(s(t)||(t=null),a(n[0]))?(n[0].push(t),i.load.apply(null,n[0]),i):(u(n,function(n){n!==t&&(n=v(n),r[n.name]=n)}),u(n,function(n){n!==t&&(n=v(n),b(n,function(){y(r)&&f(t)}))}),i)}function b(n,t){if(t=t||w,n.state===l){t();return}if(n.state===tt){i.ready(n.name,t);return}if(n.state===nt){n.onpreload.push(function(){b(n,t)});return}n.state=tt;rt(n,function(){n.state=l;t();u(h[n.name],function(n){f(n)});o&&y()&&u(h.ALL,function(n){f(n)})})}function at(n){n=n||"";var t=n.split("?")[0].split(".");return t[t.length-1].toLowerCase()}function rt(t,i){function e(t){t=t||n.event;u.onload=u.onreadystatechange=u.onerror=null;i()}function o(f){f=f||n.event;(f.type==="load"||/loaded|complete/.test(u.readyState)&&(!r.documentMode||r.documentMode<9))&&(n.clearTimeout(t.errorTimeout),n.clearTimeout(t.cssTimeout),u.onload=u.onreadystatechange=u.onerror=null,i())}function s(){if(t.state!==l&&t.cssRetries<=20){for(var i=0,f=r.styleSheets.length;i<f;i++)if(r.styleSheets[i].href===u.href){o({type:"load"});return}t.cssRetries++;t.cssTimeout=n.setTimeout(s,250)}}var u,h,f;i=i||w;h=at(t.url);h==="css"?(u=r.createElement("link"),u.type="text/"+(t.type||"css"),u.rel="stylesheet",u.href=t.url,t.cssRetries=0,t.cssTimeout=n.setTimeout(s,500)):(u=r.createElement("script"),u.type="text/"+(t.type||"javascript"),u.src=t.url);u.onload=u.onreadystatechange=o;u.onerror=e;u.async=!1;u.defer=!1;t.errorTimeout=n.setTimeout(function(){e({type:"timeout"})},7e3);f=r.head||r.getElementsByTagName("head")[0];f.insertBefore(u,f.lastChild)}function vt(){for(var t,u=r.getElementsByTagName("script"),n=0,f=u.length;n<f;n++)if(t=u[n].getAttribute("data-headjs-load"),!!t){i.load(t);return}}function yt(n,t){var v,p,e;return n===r?(o?f(t):d.push(t),i):(s(n)&&(t=n,n="ALL"),a(n))?(v={},u(n,function(n){v[n]=c[n];i.ready(n,function(){y(v)&&f(t)})}),i):typeof n!="string"||!s(t)?i:(p=c[n],p&&p.state===l||n==="ALL"&&y()&&o)?(f(t),i):(e=h[n],e?e.push(t):e=h[n]=[t],i)}function e(){if(!r.body){n.clearTimeout(i.readyTimeout);i.readyTimeout=n.setTimeout(e,50);return}o||(o=!0,vt(),u(d,function(n){f(n)}))}function k(){r.addEventListener?(r.removeEventListener("DOMContentLoaded",k,!1),e()):r.readyState==="complete"&&(r.detachEvent("onreadystatechange",k),e())}var r=n.document,d=[],h={},c={},ut="async"in r.createElement("script")||"MozAppearance"in r.documentElement.style||n.opera,o,g=n.head_conf&&n.head_conf.head||"head",i=n[g]=n[g]||function(){i.ready.apply(null,arguments)},nt=1,ft=2,tt=3,l=4,p;if(r.readyState==="complete")e();else if(r.addEventListener)r.addEventListener("DOMContentLoaded",k,!1),n.addEventListener("load",e,!1);else{r.attachEvent("onreadystatechange",k);n.attachEvent("onload",e);p=!1;try{p=!n.frameElement&&r.documentElement}catch(wt){}p&&p.doScroll&&function pt(){if(!o){try{p.doScroll("left")}catch(t){n.clearTimeout(i.readyTimeout);i.readyTimeout=n.setTimeout(pt,50);return}e()}}()}i.load=i.js=ut?lt:ct;i.test=ot;i.ready=yt;i.ready(r,function(){y()&&u(h.ALL,function(n){f(n)});i.feature&&i.feature("domloaded",!0)})})(window);
+</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+   (w[c] = w[c] || []).push(function() {
+       try {
+           w.yaCounter19456735 = new Ya.Metrika({id:19456735,
+                   clickmap:true,
+                   trackLinks:true,
+                   accurateTrackBounce:true});
+       } catch(e) { }
+   });
+
+   var n = d.getElementsByTagName("script")[0],
+       s = d.createElement("script"),
+       f = function () { n.parentNode.insertBefore(s, n); };
+   s.type = "text/javascript";
+   s.async = true;
+   s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+   if (w.opera == "[object Opera]") {
+       d.addEventListener("DOMContentLoaded", f, false);
+   } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/19456735" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+</head>
+<body class='site-auto'>
+<div class='menu_top'>
+	<div>
+		<div style='display:none' class='menu-name'>
+			ZARULEM.ws		</div>
+		<form style='display:none' class='menu-poisk' name="poisk" action="https://cheb.ru/search/?" method="get">
+			<div id="search-form">
+				<div style="flex: 20 1 auto"><input class="anim" type="text" name="q" id="q" size="18" value="" placeholder="Поиск в справочнике" autocomplete="off"></div>
+				<div style="flex: 1 1 auto;position: relative"><input class="anim" type="submit" value="Найти"><span class="anim"></span></div>
+			</div>
+		</form>
+		<div class='menu-profil'>
+			<noindex><a href='/login.php?from=https://zarulem.ws/' rel='nofollow'>вход</a></noindex> / <noindex><a href='https://forum.na-svyazi.ru/?act=Reg&CODE=00' rel='nofollow'>регистрация</a></noindex>		</div>
+		<ul>
+			<li>
+				<a class='anim mdown' href='https://cheb.ru/'>Cheb.ru</a>
+				<ul>
+					<li class='menu-none'><a href='https://cheb.ru/doma/'>Справочник cheb.ru</a></li>
+					<li><a href='https://cheb.ru/doma/'>Список улиц и домов</a></li>
+					<li><a href='https://cheb.ru/chuvashia/'>Все населенные пункты</a></li>
+					<li><a href='https://cheb.ru/360/'>Сферические панорамы</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='https://forum.na-svyazi.ru/'>Форумы</a>
+				<ul>
+					<li class='menu-none'><a href='https://forum.na-svyazi.ru/'>Форумы "На-связи"</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=74">Работа</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=1">Интернет</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=3">Связь</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=9">Компьютеры</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=33">Барахолка</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=78">Бизнес</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=79">Недвижимость</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=45">Товары, услуги и цены</a></li>
+					<!--<li><a href="https://forum.na-svyazi.ru/?showforum=337">Коронавирус</a></li>-->
+					<li><a href="https://forum.na-svyazi.ru/?showforum=109">Семья и дом</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=38">Районы Чувашии</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=21">Развлечения</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='https://cheb.ru/news/'>Новости</a>
+				<ul>
+					<li class='menu-none'><a href='https://cheb.ru/news/'>Новости Чебоксар, Чувашии</a></li>
+					<li><a href="//zarulem.ws/news.htm">Автоновости</a></li>
+					<li><a href="//cheb.ru/news_biz.htm">Бизнес-новости</a></li>
+					<li><a href="//cheb.ru/news/blagoustrojstvo/">Благоустройство</a></li>
+					<li><a href="//cheb.ru/news/dtp/">ДТП</a></li>
+					<li><a href="//cheb.ru/news/zhkh/">ЖКХ</a></li>
+					<li><a href="//na-svyazi.ru/news/">Информационные технологии</a></li>
+					<li><a href="//cheb.ru/news/kultura/">Культура</a></li>
+					<li><a href="//cheb.ru/news/medicina/">Медицина</a></li>
+					<li><a href="//cheb.ws/news.htm">Недвижимость</a></li>
+					<li><a href="//cheb.ru/news/obschestvennyj-transport/">Общественный транспорт</a></li>
+					<li><a href="//cheb.ru/news/pogoda/">Погода</a></li>
+					<li><a href="//cheb.ru/news/politika/">Политика</a></li>
+					<li><a href="//cheb.ru/news/proisshestviya/">Происшествия</a></li>
+					<li><a href="//cheb.ru/news/deti/">Родителям</a></li>
+					<li><a href="//cheb.ru/news/sport/">Спорт</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='https://forum.na-svyazi.ru/?showforum=74'>Работа</a>
+				<ul>
+					<li class='menu-none'><a href='https://forum.na-svyazi.ru/?showforum=74'>Форум "Работа"</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=108'>Поиск работы</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=144'>Работа для студентов и школьников</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=169'>Временные вакансии</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=185'>Вакансии без указания зарплаты</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=279'>Вакансии в Москве и других регионах</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='https://cheb.ws/'>Недвижимость</a>
+				<ul>
+					<li class='menu-none'><a href='https://cheb.ws/'>Сайт "Недвижимость Чувашии"</a></li>
+					<li><a href="https://cheb.ws/news.htm">Новости недвижимости</a></li>
+					<li><a href="https://cheb.ws/1komnat/">Однокомнатные квартиры</a></li>
+					<li><a href="https://cheb.ws/2komnat/">Двухкомнатные квартиры</a></li>
+					<li><a href="https://cheb.ws/3komnat/">Трёхкомнатные квартиры</a></li>
+					<li><a href="https://cheb.ws/4komnat/">Четырёхкомнатные квартиры</a></li>
+					<li><a href="https://cheb.ws/doms/">Коттеджи</a></li>
+					<li><a href="https://cheb.ws/komnaty/">Комнаты</a></li>
+					<li><a href="https://cheb.ws/garag/">Гаражи</a></li>
+					<li><a href="https://cheb.ws/komerc/">Коммерческая недвижимость</a></li>
+					<li><a href="https://cheb.ws/ned/?agency=-">Объявления частных лиц</a></li>
+					<li><a href="https://cheb.ws/ned/?map=1">Недвижимость на карте</a></li>
+					<li><a href="https://cheb.ws/foto.htm">Новые фото строек</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown active' href='https://zarulem.ws/'>Авто</a>
+				<ul>
+					<li class='menu-none'><a href='https://zarulem.ws/'>Автопортал</a></li>
+					<li><a href='//forum.zarulem.ws/?act=Search&CODE=getactive'>Последние темы автофорума</b></a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=24">Автофорум "За рулём"</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=117">Автоновости</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=147">Выбор авто</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=134">Гараж</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=99">Праворульные авто</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=135">Мото</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=112">Ремонт, запчасти, тюнинг</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=111">Автопроисшествия</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=100">Общественный транспорт</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown'' href='https://afisha.cheb.ru/kino/'>Киноафиша</a>
+				<ul>
+					<li class='menu-none'><a href='https://afisha.cheb.ru/kino/'>Киноафиша Чебоксар</a></li>
+					<li><a href="https://afisha.cheb.ru/">Афиша</a></li>
+					<li><a href="https://afisha.cheb.ru/weekend.htm">Куда пойти в выходные</a></li>
+					<li><a href="https://afisha.cheb.ru/teatr/">Театральная афиша</a></li>
+					<li><a href="https://afisha.cheb.ru/kafe.htm">Кафе, бары, рестораны</a></li>
+					<li><a href="https://afisha.cheb.ru/go/koncert/">Концерты</a></li>
+					<li><a href="https://cheb.ru/news/detyam/">Мероприятия для детей</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='https://cheboksary.ws/'>Карта</a>
+				<ul>
+					<li class='menu-none'><a href='https://cheboksary.ws/'>Карта Чувашии</a></li>
+					<li><a href="https://cheboksary.ws/god/9980/">Карта возраста домов</a></li>
+					<li><a href="https://cheboksary.ws/air/">Фото с высоты</a></li>
+					<li><a href="https://cheboksary.ws/god/9987/">Карта архитекторов</a></li>
+					<li><a href="https://cheb.ru/360/">Сферические панорамы</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='javascript:void(0)'>Ещё</a>
+				<ul>
+					<li><a href='https://na-svyazi.ru/'>На-связи</a></li>
+					<li><a href='https://cheb.ru/spravka/'>Справочник</a></li>
+					<li><a href='https://foto.cheb.ru/'>Фото</a></li>
+					<li><a href='https://pogoda21.ru/'>Погода</a></li>
+					<li><a href='https://cheb.ru/doma/'>Адреса</a></li>
+					<li><a href='https://cheb.ru/obmen.htm'>Курсы валют</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=186'>Покупки</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=33'>Барахолка</a></li>
+				</ul>
+			</li>
+						<li class='moders'>
+				<a class='anim mdown'>Служба поддержки</a>
+				<ul>
+					<li><a href='https://cheb.ru/add.htm'>Добавить организацию</a></li>
+					<li><a href='https://afisha.cheb.ru/addnews.php'>Добавить новость</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showtopic=278246'>Сообщить об ошибке</a></li>
+					<li><a href='https://cheb.ru/license.htm'> Условия использования</a></li>
+					<li><a href='/zakaz.htm'>Реклама на сайте</a></li>
+					<li><a href='https://cheb.ru/contacts.htm'>Контакты</a></li>
+				</ul>
+					</ul>
+		<div class="menu-close" style='display:none'><img src="https://cheb.ru/i/close.svg"></div>
+	</div>
+</div><div class='nodiv topbanpda'><a href="https://cheb.ru/g-OfbE5M0cDH" target="_blank"><img border="0" src="https://afisha.cheb.ru/css/ban/3368.gif?id=89342" style="max-width:500px;width:100%;padding:0px;margin:0 auto;line-height:1px;display:block"></a></div>
+
+<div id='wrapper'>
+<div class="pagewrap" id="PageWrap">
+	<div class="main-layer layer-size">
+	<div id="pagetop1">
+		<div class='anim'><div class="yesdiv gabm b-menu butt-open-main-menu-new"></div></div>
+		<a href='/'><img src='https://zarulem.ws/i/logopdas.png'></a>
+	</div>
+
+	<div id='container'>
+		<div class='nodivs'>
+				<div style='padding:0px 0 5px 0'>
+			<table width='100%'><tr><td><a href='/' style='margin-right:20px;font-size:28px;font-weight:bold;color:#4d4c4c' id='logoauto' title='Автопортал - Чебоксары, Чувашия'><nobr>Автопортал</nobr></a></td>
+			<td class='bgtopauto'></td></tr></table>
+		</div>
+		<table width='100%' style='margin:5px 0 5px 0'><tr>
+			<td style='text-align:center;width:50%'><div class='ru46970'><div><noindex><a href="https://cheb.ru/g-IS5KBD8hz8" target="_blank" rel="nofollow"><img data-src="https://afisha.cheb.ru/css/bg/3244.gif?id=2.4" class="lazyload"></a></noindex></div></div></td>
+			<td style='text-align:center;width:50%'><div class='ru46970'><div><noindex><a href="https://cheb.ru/g-V0ZPYw4TM0" target="_blank" rel="nofollow"><img data-src="https://afisha.cheb.ru/css/bg/2740.gif?id=2.4" class="lazyload"></a></noindex></div></div></td>
+		</tr></table>
+		</div>
+
+
+<div id='content'>
+	<div id='text'>
+		<div class='h2title'>
+			<h1 class='topsraf'><a href='https://zarulem.ws/_transport.htm'>ZaRulem.ws - автомобильный портал Чебоксары</a></h1>
+			<section>
+				<form name="poisk" action=" https://cheb.ru/search/?" method='get'>
+	<div id='search-form'>
+		<div style='flex: 20 1 auto'><input class='anim' type="text" name="q" id="q" size="18" value="" placeholder="Поиск в справочнике"></div>
+		<div style='flex: 1 1 auto;position: relative'><input class='anim' type="submit" value="Найти"><span class='anim'></span></div>
+	</div>
+</form>				<div class='listitem'>
+<div>
+<h2><a href=''>Справочник</a></h2><p class='' style='overflow:inherit;height:auto'>
+<a href="/autosalon.htm">Автосалоны</a>, <a href="/azs.htm">Автозаправки</a>, <a href="/azs-gas.html">АГЗС</a>, <a href="/zap.htm">Магазины автозапчастей</a>, <a href="/aserv.htm">Автосервис, СТО</a>, <a href="/moika.htm">Автомойка</a></p></div>
+<div>
+<h2><a href=''>Сервис</a></h2><p>
+<a href="/autoprokat.htm">Автопрокат</a>, <a href="/gruz.htm">Грузоперевозки</a>, <a href='/patp.htm'>Транспортные предприятия</a>, <a href="/specteh.htm">Спецтехника</a></p></div>
+<div>
+<h2><a href='https://cheb.ru/vokzals.htm'>Вокзалы</a></h2><p>
+<a href="https://cheb.ru/vokzals.htm">Вокзалы и автостанции</a>, <a href="https://cheb.ru/vokzal/zhel_vok.html">Железнодорожный вокзал</a>, <a href="https://cheb.ru/vokzal/aeroport.html">Аэропорт</a>, <a href="https://cheb.ru/vokzal/rech_vok.html">Речной порт</a></p></div>
+<div>
+<h2><a href=''>Общественный транспорт</a></h2><p>
+<a href="/taxi.htm">Службы такси</a>, <a href="/marshrut.htm">Маршрутные такси</a>, <a href="/avtobus.htm">Автобусы</a>, <a href="/trol.htm">Троллейбусы</a></p></div>
+<div>
+<h2><a href=''>Автошколы и ГИБДД</a></h2><p>
+<a href="/autoshkola.htm">Автошколы</a>, <a href='/autodrom.htm'>Автодромы</a>, <a href="/gibdd.htm">ГИБДД</a>, <a href="/gibdd-tehosmotr.html">Техосмотр</a>, <a href="/gibdd-registr.html">Регистрация транспорта</a></p></div>
+<div>
+<h2><a href=''>Смежные разделы</a></h2><p>
+<a href="/ev.htm">Автоэвакуаторы</a>, <a href='/autostoj.htm'>Автостоянки</a>, <a href="https://forum.zarulem.ws/?showforum=160">Автоспорт</a>, <a href="/garazh.htm">Гаражные комплексы</a></p></div></div>			</section>
+		</div>
+		<div class='h2title'>
+			<h2><a href='/news.htm'>Автомобильные новости</a></h2>
+			<section>
+				<div class='podnewstops_grid'><div><a href='https://zarulem.ws/news.htm?shownews=292159' title='Льготное время на платных парковках увеличили до 120 минут'><img data-src='/pics/292159.jpg' class='lazyload'>Льготное время на платных парковках увеличили до 120 минут<time> 15:01</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292150' title='ЦОБДД придумал, как разгрузить пробку у экс-Макдоналдса. Осталось реализовать'><img data-src='/pics/292150.jpg' class='lazyload'>ЦОБДД придумал, как разгрузить пробку у экс-Макдоналдса. Осталось реализовать<time> 12:31</time></a></div><div><a href='https://cheb.ru/news/?shownews=292139' title='Инвалид получил ушибы после встречи с главой Красноармейского района'><img data-src='/pics/292139.jpg' class='lazyload'>Инвалид получил ушибы после встречи с главой Красноармейского района<time> 11:00</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292123' title='Два погибших за сутки. Сводка ГИБДД с дорог Чувашии'><img data-src='/pics/292123.jpg' class='lazyload'>Два погибших за сутки. Сводка ГИБДД с дорог Чувашии<time> 09:46</time></a></div><div><a href='https://cheb.ru/news/?shownews=292121' title='Николаев возложил на УК ответственность за машины, мешающие вывозу мусора во дворах'><img data-src='/pics/292121.jpg' class='lazyload'>Николаев возложил на УК ответственность за машины, мешающие вывозу мусора во дворах<time> 08:46</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292120' title='«Лансеры» бьют, «Лансеров» бьют. Два видео'><img data-src='/pics/292120.jpg' class='lazyload'>«Лансеры» бьют, «Лансеров» бьют. Два видео<time> 08:39</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292081' title='Контракт на содержание чебоксарских дорог подорожал еще на 30 млн рублей'><img data-src='/pics/292081.jpg' class='lazyload'>Контракт на содержание чебоксарских дорог подорожал еще на 30 млн рублей<time> 29.02</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292073' title='«Кадиллак» догнал «Киа-Рио» на Гражданском перекрестке'><img data-src='/pics/292073.jpg' class='lazyload'>«Кадиллак» догнал «Киа-Рио» на Гражданском перекрестке<time> 29.02</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292064' title='В гаражном кооперативе на Кукшумской загорелся «Рено»'><img data-src='/pics/292064.jpg' class='lazyload'>В гаражном кооперативе на Кукшумской загорелся «Рено»<time> 29.02</time></a></div><div><a href='https://cheb.ru/news/?shownews=292059' title='Выставка «Картофель-2024»: на 2 дня изменится путь заезда к МТВ Центру в Чебоксарах'><img data-src='/pics/292059.jpg' class='lazyload'>Выставка «Картофель-2024»: на 2 дня изменится путь заезда к МТВ Центру в Чебоксарах<time> 29.02</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292041' title='Один задержан. Видео с погоней за похитителями таксиста'><img data-src='/pics/292041.jpg' class='lazyload'>Один задержан. Видео с погоней за похитителями таксиста<time> 28.02</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292035' title='Водителя запихнули в багажник, машину угнали в Канаш. Первая информация о погоне, ДТП и «перевертыше» '><img data-src='/pics/292035.jpg' class='lazyload'>Водителя запихнули в багажник, машину угнали в Канаш. Первая информация о погоне, &hellip;<time> 28.02</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292033' title='Улицу Карла Маркса перекроют в субботу в 17:00'><img data-src='/pics/292033.jpg' class='lazyload'>Улицу Карла Маркса перекроют в субботу в 17:00<time> 28.02</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292019' title='Чиновники в Хыркасах запретили складировать горы привезенного снега на частном участке'><img data-src='/pics/292019.jpg' class='lazyload'>Чиновники в Хыркасах запретили складировать горы привезенного снега на частном уча&hellip;<time> 28.02</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292006' title='Пьяный водитель беспричинно перекрыл проезд и разбил ломом чужую машину. Будет суд'><img data-src='/pics/292006.jpg' class='lazyload'>Пьяный водитель беспричинно перекрыл проезд и разбил ломом чужую машину. Будет суд<time> 28.02</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=292004' title='Просто не заметил. Два видео с улицы Ленкома'><img data-src='/pics/292004.jpg' class='lazyload'>Просто не заметил. Два видео с улицы Ленкома<time> 28.02</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=291997' title='Пешеход в темной одежде шел по краю дороги и попал под колеса автомобиля'><img data-src='/pics/291997.jpg' class='lazyload'>Пешеход в темной одежде шел по краю дороги и попал под колеса автомобиля<time> 27.02</time></a></div><div><a href='https://zarulem.ws/news.htm?shownews=291989' title='Выезды со дворов и переходы чистят, заявил Спирин'><img data-src='/pics/291989.jpg' class='lazyload'>Выезды со дворов и переходы чистят, заявил Спирин<time> 27.02</time></a></div></div>			</section>
+		</div>
+        <div class='h2title'>
+			<h2><a href='//cheb.ru/news/video/'>Видео</a></h2>
+			<section style='padding: 10px 0'>
+			<div class='mycont'><a href='https://forum.zarulem.ws/?act=findpost&pid=6291325' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/292120.jpg)'><p class='anim'>«Лансеры» бьют, «Лансеров» бьют. Два видео</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6291263' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/292073.jpg)'><p class='anim'>«Кадиллак» догнал «Киа-Рио» на Гражданском перекрестке</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6291096' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/292004.jpg)'><p class='anim'>Просто не заметил. Два видео с улицы Ленкома</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6291004' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291977.jpg)'><p class='anim'>Бессмысленные перестроения, удар, ДТП. Видео с проспекта Тракторостроителей</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6290973' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291960.jpg)'><p class='anim'>Срезал. Как водитель темной легковушки устроил ДТП у Дома торговли</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6290627' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291812.jpg)'><p class='anim'>Один день в Чебоксарах. Три видео с ДТП</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6290527' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291778.jpg)'><p class='anim'>Автовоз столкнулся с легковушкой у Красной горки. Видео с моментом ДТП</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6290493' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291758.jpg)'><p class='anim'>Водитель «Весты» совершил ДТП с участием 3 авто на улице Гагарина</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6290438' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291741.jpg)'><p class='anim'>Женщина не выскочила из-за сугроба. Момент ДТП на Президентском бульваре</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6289966' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291652.jpg)'><p class='anim'>Как объяснить водителю «Гранты», что он виноват в ДТП?</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6289886' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291616.jpg)'><p class='anim'>Проехал на запрещающий. Момент ДТП с пострадавшей на Эгерском бульваре</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6289473' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291525.jpg)'><p class='anim'>Грузовик врезался в машину дорожников на М-12</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6289394' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291499.jpg)'><p class='anim'>«Гранта» перевернулась на Алатырском шоссе</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6289214' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291466.jpg)'><p class='anim'>«Гранту» вынесло под автобус на Ядринском шоссе</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6289206' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291464.jpg)'><p class='anim'>Проспект неадекватных разворотов. Три видео</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6289119' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291440.jpg)'><p class='anim'>Сирена была. Еще одно видео ДТП со скорой</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6288755' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291373.jpg)'><p class='anim'>Кто собрал вечернюю пробку на улице Гагарина. Очередное ДТП на «красный»</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6288718' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291365.jpg)'><p class='anim'>Просто передумал. Как маневр одного водителя привел к трем ДТП у рынка</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6288121' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291174.jpg)'><p class='anim'>Прокуратура оценит сугроб на месте ДТП, из-за которого не видно пешеходов</p></a><a href='https://forum.zarulem.ws/?act=findpost&pid=6288097' class='myconta' style='background-image: url(//afisha.cheb.ru/pics/big/291169.jpg)'><p class='anim'>Два водителя без ОСАГО столкнулись на проспекте Ленина</p></a></div>
+			</section>
+		</div>
+		<div class='block-probki'></div>
+		<div class='h2title'><!-- AZS_NEW -->
+<h2><a href="https://zarulem.ws/azs.htm">Цены на бензин и ДТ</a> (от 01.03.2024 10:53)</h2><div class="azs_block">
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs-avtoport.html">Автопорт</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>48.10-48.60</span>АИ92</div><div class="azs_val azs-rp"><span>51.70-52.20</span>АИ95</div><div class="azs_val azs-rp"><span>65.50</span>АИ98/100</div><div class="azs_val azs-rp"><span>58.20-60.80</span>ДТ</div><div class="azs_val azs-rp"><span>24.10-25.80</span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs-tatneft.html">Татнефть</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>48.50-49.05</span>АИ92</div><div class="azs_val azs-rp"><span>52.85</span>АИ95</div><div class="azs_val azs-rp"><span>66.70</span>АИ98/100</div><div class="azs_val azs-rp"><span>58.40-68.80</span>ДТ</div><div class="azs_val azs-rp"><span>26.50</span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs-bashneft.html">Башнефть</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>49.70</span>АИ92</div><div class="azs_val azs-rp"><span>53.05</span>АИ95</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>АИ98/100</div><div class="azs_val azs-rp"><span>61.20</span>ДТ</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs-doriss.html">Дорисс</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>47.99-48.00</span>АИ92</div><div class="azs_val azs-rp"><span>51.00-51.50</span>АИ95</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>АИ98/100</div><div class="azs_val azs-rp"><span>59.90-60.99</span>ДТ</div><div class="azs_val azs-rp"><span>24.99-25.90</span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs-bestoil.html">BestOil</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>47.99-49.00</span>АИ92</div><div class="azs_val azs-rp"><span>51.40</span>АИ95</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>АИ98/100</div><div class="azs_val azs-rp"><span>58.60-58.99</span>ДТ</div><div class="azs_val azs-rp"><span>24.50</span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs/gazsnab3p.html">Газснаб</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>49.10</span>АИ92</div><div class="azs_val azs-rp"><span>53.00</span>АИ95</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>АИ98/100</div><div class="azs_val azs-rp"><span>66.20</span>ДТ</div><div class="azs_val azs-rp"><span>23.00</span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs-gazprom.html">Газпромнефть</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>48.49</span>АИ92</div><div class="azs_val azs-rp"><span>52.99-53.99</span>АИ95</div><div class="azs_val azs-rp"><span>67.99</span>АИ98/100</div><div class="azs_val azs-rp"><span>60.99-67.49</span>ДТ</div><div class="azs_val azs-rp"><span>23.99-25.49</span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs-promneft.html">Промнефть</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>47.50</span>АИ92</div><div class="azs_val azs-rp"><span>51.00</span>АИ95</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>АИ98/100</div><div class="azs_val azs-rp"><span>57.90-60.50</span>ДТ</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs-sibneft.html">Irbis</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>48.49-49.49</span>АИ92</div><div class="azs_val azs-rp"><span>52.99-54.99</span>АИ95</div><div class="azs_val azs-rp"><span>60.49-64.99</span>АИ98/100</div><div class="azs_val azs-rp"><span>47.99-59.99</span>ДТ</div><div class="azs_val azs-rp"><span>25.49</span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs-toko.html">ТОКО</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>47.99-48.49</span>АИ92</div><div class="azs_val azs-rp"><span>51.99</span>АИ95</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>АИ98/100</div><div class="azs_val azs-rp"><span>58.99-59.90</span>ДТ</div><div class="azs_val azs-rp"><span>24.99</span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs-lukoil.html">Лукойл</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>51.02</span>АИ92</div><div class="azs_val azs-rp"><span>55.76</span>АИ95</div><div class="azs_val azs-rp"><span>68.69</span>АИ98/100</div><div class="azs_val azs-rp"><span>62.48</span>ДТ</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>ГАЗ</div></div></div>
+				<div class="azs_item">
+					<div class="titleazsright"><a href="https://zarulem.ws/azs/energy23p.html">Premier</a></div>
+					<div class="azstitle">
+				<div class="azs_val azs-rp"><span>48.49</span>АИ92</div><div class="azs_val azs-rp"><span>52.99</span>АИ95</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>АИ98/100</div><div class="azs_val azs-rp"><span>56.90-59.99</span>ДТ</div><div class="azs_val azs-rp"><span><span class="text-gray" title="нет в наличии">нет</span></span>ГАЗ</div></div></div></div><!-- /AZS_NEW --></div>		<div class='block-vk' style='max-width:200px;margin:0 auto'></div>
+		<!-- Новости отдыха -->
+<!--		<div class='h2title'>
+			<h2><a href='//afisha.cheb.ru' title='Куда поехать в Чебоксарах'>Куда поехать в Чебоксарах</a></h2>
+			<section><div class='podnewstops_grid'><div><a href='https://afisha.cheb.ru/go/291531' title='1 марта в ТЮЗе Гала-концерт лауреатов и дипломантов фестиваля-конкурса русского романса «Белая акация»'><img data-src='/pics/291531.jpg' class='lazyload'>1 марта в ТЮЗе Гала-концерт лауреатов и дипломантов фестиваля-конкурса русского ро&hellip;<small>Начало в 18:00. Вход: 450-500 руб.</small></a></div><div><a href='https://afisha.cheb.ru/go/290174' title='1 марта в ДК тракторостроителей Сергей Лекеров (6+)'><img data-src='/pics/290174.jpg' class='lazyload'>1 марта в ДК тракторостроителей Сергей Лекеров (6+)<small>Начало в 18:30. Вход: 600-800 руб.</small></a></div><div><a href='https://afisha.cheb.ru/go/290102' title='1 марта в Русском драмтеатре спектакль «Одинокая насмешница» (12+)'><img data-src='/pics/290102.jpg' class='lazyload'>1 марта в Русском драмтеатре спектакль «Одинокая насмешница» (12+)<small>Начало в 19:00. Вход: 600-2500 руб.</small></a></div><div><a href='https://afisha.cheb.ru/go/291802' title='1 марта в ДК Ухсая Ансамбль «Голубые береты» (16+)'><img data-src='/pics/291802.jpg' class='lazyload'>1 марта в ДК Ухсая Ансамбль «Голубые береты» (16+)<small>Начало в 19:00. Вход: 1000-2500 руб.</small></a></div><div><a href='https://afisha.cheb.ru/go/292055' title='1 марта - Дуэт Анны Сочаловой 1+1 &lsquo;Feline March&lsquo; в гастропабе &lsquo;Архив&lsquo; (СЗР)'><img data-src='/pics/292055.jpg' class='lazyload'>1 марта - Дуэт Анны Сочаловой 1+1 'Feline March' в гастропабе 'Архив' (СЗР)<small>Начало в 20:00</small></a></div><div><a href='https://afisha.cheb.ru/go/292051' title='1 марта - Шоу-балет JUICE DANCE в ресторане &lsquo;Малевич Лаунж&lsquo; (Волжский-3) 18+'><img data-src='/pics/292051.jpg' class='lazyload'>1 марта - Шоу-балет JUICE DANCE в ресторане 'Малевич Лаунж' (Волжский-3) 18+<small>Начало в 20:00</small></a></div><div><a href='https://afisha.cheb.ru/go/292098' title='1 марта - Живое выступление джаз &lsquo;Краш Band&lsquo; и танцы до утра в баре «Тотем» 18+'><img data-src='/pics/292098.jpg' class='lazyload'>1 марта - Живое выступление джаз 'Краш Band' и танцы до утра в баре «Тотем» 18+<small>Начало в 21:00</small></a></div><div><a href='https://afisha.cheb.ru/go/292106' title='1 марта - Вечеринка &lsquo;Настоятельно рекомендуем&lsquo; в Аптека-баре (Дом мод) 18+'><img data-src='/pics/292106.jpg' class='lazyload'>1 марта - Вечеринка 'Настоятельно рекомендуем' в Аптека-баре (Дом мод) 18+<small>бар работает с 17:00</small></a></div><div><a href='https://afisha.cheb.ru/go/292142' title='1 марта - Выступление Alex KONU в лаунж-баре &lsquo;Unity Place&lsquo; (Калинина, 98/23)'><img data-src='/pics/292142.jpg' class='lazyload'>1 марта - Выступление Alex KONU в лаунж-баре 'Unity Place' (Калинина, 98/23)<small>Начало в 21:00</small></a></div></div></section>
+		</div>
+		<div class='h2title'>
+			<h2></span><a href='/market/catalog/'>АвтоБарахолка</a></h2>
+			<section>
+				<center>Размещение новых объявлений на автобарахолке временно закрыто</center>
+			</section>
+		</div>-->
+			</div>
+</div>
+<div id='left' class='noprint block200'>
+<div class='menudiv'>
+<h6>Разделы</h6>
+ <ul>
+    <!--<li><a href="/market/catalog/?auto=legkovye_avtomobili"><b>АвтоБарахолка</b></a></li>-->
+  <li><a href="/autosalon.htm">Автосалоны</a>, <a href="/azs.htm">АЗС</a>, <a href="/azs-gas.html">АГЗС</a></li>
+  <li><a href="/zap.htm">Магазины автозапчастей</a></li>
+  <li><a href="/aserv.htm">Автосервисы</a></li>
+  <li><a href="/moika.htm">Автомойки</a>, <a href="/autoprokat.htm">Автопрокат</a></li>
+  <li><a href="/gruz.htm">Грузоперевозки</a>, <a href="/autoshkola.htm">Автошколы</a></li>
+  <li><a href="/specteh.htm">Спецтехника</a>, <a href="//cheboksary.ws/nakarte/garazh/">Гаражи</a></li>
+  <li><a href="/gibdd.htm">ГИБДД</a>, <a href="/gibdd-tehosmotr.html">СТО</a>, <a href="/gibdd-registr.html">регистрация</a></li>
+  <li><a href='/zakaz.htm'><b>Реклама на сайте</b></a>
+ </ul>
+</div>
+
+<div class='ru200200'><div class="rurek auto"><noindex><a href="https://cheb.ru/g-OfbE5M0cDH" target="_blank" rel="nofollow">Диал-Авто</a></noindex></div><div><noindex><a href="https://cheb.ru/g-OfbE5M0cDH" target="_blank" rel="nofollow"><img data-src="https://afisha.cheb.ru/css/bg/3368.gif?id=2.4" class="lazyload"></a></noindex></div></div>
+<div class='menudiv'>
+ <h6><a href="//forum.zarulem.ws">АвтоФорумы</a></h6>
+ <ul>
+  <li><a href='//forum.zarulem.ws/?act=Search&CODE=getactive'><b>Последние темы</b></a></li>
+  <li><a href="//forum.zarulem.ws/?showforum=24">Автофорум "За рулём"</a></li>
+  <li><a href="//forum.zarulem.ws/?showforum=117">Автоновости</a></li>
+  <li><a href="//forum.zarulem.ws/?showforum=147">Выбор авто</a>, <a href="//forum.zarulem.ws/?showforum=134">Гараж</a></li>
+  <li><a href="//forum.zarulem.ws/?showforum=99">Праворульные авто</a>, <a href="//forum.zarulem.ws/?showforum=135">Мото</a></li>
+  <li><a href="//forum.zarulem.ws/?showforum=112">Ремонт, запчасти, тюнинг</a></li>
+  <li><a href="//forum.zarulem.ws/?showforum=111">Автопроисшествия</a></li>
+  <li><a href="//forum.zarulem.ws/?showforum=100">Общественный транспорт</a></li>
+  <li><a href="//forum.zarulem.ws/?showforum=157">Барахолка-авто</a>, <a href="//forum.zarulem.ws/?showforum=139">ОколоАвто</a></li>
+  <li><a href="https://forum.na-svyazi.ru"><b>Форумы на-связи</b></a></li>
+ </ul>
+</div>
+
+<div class='ru200200'><div class="rurek auto"><noindex><a href="https://cheb.ru/g-rmpH1Uqd2G" target="_blank" rel="nofollow">Новости</a></noindex></div><div><noindex><a href="https://cheb.ru/g-rmpH1Uqd2G" target="_blank" rel="nofollow"><img data-src="https://afisha.cheb.ru/css/bg/2648.gif?id=2.4" class="lazyload"></a></noindex></div></div>
+
+<div class='menudiv'>
+<h6>Смежные разделы</h6>
+ <ul>
+  <li><a href="/autoshkola.htm">Автошколы</a></li>
+  <li><a href="/gibdd.htm">ГИБДД Чебоксар и Чувашии</a></li>
+  <li><a href="/ev.htm">Автоэвакуаторы</a></li>
+  <li><a href="/garazh.htm">Гаражные комплексы</a></li>
+  <li><a href="/autocode.htm">Автомобильные коды РФ</a></li>
+  <li><a href="//cheboksary.ws">Карта Чебоксар</a></li>
+ </ul>
+</div></div>
+<div id='right' class='noprint block200'><div class='ru200200'><div class="rurek auto"><noindex><a href="https://cheb.ru/g-VaEC8KTcaw" target="_blank" rel="nofollow">Спортивная афиша</a></noindex></div><div><noindex><a href="https://cheb.ru/g-VaEC8KTcaw" target="_blank" rel="nofollow"><img data-src="https://afisha.cheb.ru/css/bg/3247.gif?id=2.4" class="lazyload"></a></noindex></div></div>
+<div class='movepda' data-bl='block-probki'><h6><a href='https://cheboksary.ws/probki-ya.htm'>Пробки в Чебоксарах</a></h6>
+		<div class="probki">
+			<a href="https://cheboksary.ws/probki-ya.htm" target="_blank" title="Данные от 01.03.2024 15:00">
+			<div class="probki__logo"></div>
+			<div class="probki__status">
+				<div class="probki__icon"><img src="https://forum.zarulem.ws/i/probki/yellow.png"></div>
+				<div class="probki__level">4 балла</div>
+			</div>
+			<div class="probki__hint">Местами затруднения</div>
+			</a>
+		</div>
+	</div>	<h6><a href='https://vk.com/zarulemws'>ZaRulem.ws</a></h6>
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?83"></script>
+	<div class='movepda' data-bl='block-vk'>
+		<!-- VK Widget -->
+		<div id="vk_groups"></div>
+		<script type="text/javascript">
+		VK.Widgets.Group("vk_groups", {mode: 0, width: "200", height: "290"}, 43776317);
+		</script>
+		<div class='tlg'>
+			<img src='/i/tlg.png'>
+			<a href='https://t.me/zarulemws'>Автоновости в Телеграмм</a>
+			<div style='clear:both;margin:10px 0 0 0'><a href='https://t.me/zarulemwsbot'>+ прислать новость/видео</a></div>
+		</div>
+	</div>
+	
+<h6><a href='https://cheb.ru/news/'>Новости Чебоксар</a></h6>
+<link rel='stylesheet' type='text/css' href='https://cheb.ru/css/news.css?ver=2.4'>
+<div class='divalnews'><img data-src='/pics/292165.jpg' class='lazyload'><a href='https://cheb.ru/news/?shownews=292165'>Пенсионер «продлил срок действия сим-карты» и перевел на «безопасный счет» 4,4 млн рублей</a><time>16:15</time></div><div class='divalnews'><img data-src='/pics/292164.jpg' class='lazyload'><a href='https://cheb.ru/news/?shownews=292164'>В Чувашии вновь заявили, что готовы участвовать в создании поезда на магнитной подушке</a><time>16:05</time></div><div class='divalnews'><img data-src='/pics/292159.jpg' class='lazyload'><a href='https://zarulem.ws/news.htm?shownews=292159'>Льготное время на платных парковках увеличили до 120 минут</a><time>15:01</time></div><div class='divalnews'><img data-src='/pics/292158.jpg' class='lazyload'><a href='https://cheb.ru/news/?shownews=292158'>Чебоксарца осудили за видеозаписи с реабилитацией нацизма и ксенофобией</a><time>14:55</time></div>
+<!-- Новости проекта -->
+<h6><a href='https://cheb.ru/news/na-svyazi/'>Новости проекта</a></h6>
+<div class='divalnews'><img data-src='/pics/290245.jpg' class='lazyload'><a href='https://cheb.ru/news/?shownews=290245'>На сайте cheboksary.ws существенно обновлена карта: добавлены стройки и другие объекты</a><time>10.01</time></div><div class='divalnews'><img data-src='/pics/289588.jpg' class='lazyload'><a href='https://cheb.ru/news/?shownews=289588'>Существенно обновлена карта Чебоксар 1970 года. Нужна помощь в исправлении ошибок</a><time>16.12.2023</time></div><div class='divalnews'><img data-src='/pics/289330.jpg' class='lazyload'><a href='https://cheb.ru/news/?shownews=289330'>«Добро пожаловать или без миллиона вход запрещён» - обзор цен на долевку в Чебоксарах</a><time>08.12.2023</time></div><div class='divalnews'><img data-src='/pics/289080.jpg' class='lazyload'><a href='https://cheb.ru/news/?shownews=289080'>На форумах стало возможно ставить короткие вертикальные видео Shorts от YouTube</a><time>01.12.2023</time></div></div>
+</div>
+
+<link rel='stylesheet' type='text/css' href='https://cheb.ru/css/news.css?ver=2.281'>
+<link rel="stylesheet" href="https://cheb.ru/css/slick1.css?ver=2.275" type='text/css' />
+<script src="https://cheb.ru/js/slick.min1.js?ver=2.275"></script>
+<script>
+jQuery(function(){
+	$('.mycont').slick({
+		autoplay: true,
+		autoplaySpeed: 5000,
+		speed: 500,
+		dots: false,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		arrows: true,
+		responsive: [{
+			breakpoint: 940,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		}]
+	});
+	if($(window).width() <= 900){
+		if($('.movepda').length > 0){
+			$('.movepda').each(function(indx){
+				var bl = $(this).data('bl');
+				if($('.'+bl).length > 0){
+					 html = $(this).html();
+					 $('.'+bl).html("<div class='h2title'>"+html+"</div>");
+				}
+			});
+		}
+	}
+});
+</script>
+<div class='clear'></div>
+
+<div class='newstop noprint'>
+	<a href="/zakaz.htm">Реклама на сайте</a>&nbsp;|&nbsp;
+	<a href="//cheb.ru/link.htm">Ссылка на нас</a>&nbsp;|&nbsp;
+	<a href="//forum.na-svyazi.ru/?showforum=16">Служба поддержки</a>&nbsp;|&nbsp;
+</div>
+
+<div class='footbl3'>
+	<div>
+		<noindex><p>Внести исправления и дополнения можно, позвонив по телефону 44-15-55 (служба обновления информации на справочном портале <a href="//cheb.ru">cheb.ru</a>), или в <a href="//forum.na-svyazi.ru/?showtopic=278246"><u>специальной теме на форумах</u></a>.</p></noindex>
+	</div>
+	<div><div style='margin:10px 0'><div><noindex><div id="yandex_ad1">
+<!-- Yandex.RTB R-A-155098-1 -->
+<div id="yandex_rtb_R-A-155098-1"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-155098-1",
+                renderTo: "yandex_rtb_R-A-155098-1",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+</div>
+<div id="yandex_ad2">
+<!-- Yandex.RTB R-A-155098-2 -->
+<div id="yandex_rtb_R-A-155098-2"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-155098-2",
+                renderTo: "yandex_rtb_R-A-155098-2",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+</div></noindex></div></div></div>
+	<div>
+		Сайт размещен на площадке компании <noindex><a href="//beeline.ru/index.wbp?region=cheboksary" rel='nofollow'>"ВымпелКом (Билайн)"</a></noindex><br><br>
+		<!--LiveInternet counter--><noindex><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click;cheb_ru' "+"target=_blank><img src='https://counter.yadro.ru/hit;cheb_ru?t11.18;r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random()+"' alt='' title='LiveInternet: показано число просмотров за 24"+" часа, посетителей за 24 часа и за сегодня' "+"border=0 width=88 height=31></a>")</script></noindex><!--/LiveInternet-->
+	</div>
+</div>
+
+</div>
+
+
+</div>
+
+<noindex>
+<div class="hide-layer layer-size butt-close-main-menu"></div>
+<div class="menu-layer layer-size">
+	<div class="cl-mm butt-close-main-menu"></div>
+	<div class="bg-mm"></div>
+	<div class="cont-mm">
+		<img src='https://zarulem.ws/i/logopdas.png' style='margin: 1em'>
+		<div style='padding: 0 1em 1em 1em'>
+			<form name="poisk" action="https://cheb.ru/search/?" method="get">
+				<div id="search-form">
+					<div style="flex: 20 1 auto"><input class="anim" type="text" name="q" id="q" size="18" value="" placeholder="Поиск в справочнике" autocomplete="off"></div>
+					<div style="flex: 1 1 auto;position: relative"><input class="anim" type="submit" value="Найти"><span class="anim"></span></div>
+				</div>
+			</form>
+		</div>
+		<ul class="rubrics menuinlinepda">
+			<li><a href='https://cheb.ru/'>Справочник</a></li>
+			<li><a href='https://forum.na-svyazi.ru/?act=idx'>Форумы</a></li>
+			<li><a href='https://cheb.ru/news/'>Новости</a></li>
+			<li><a href='https://cheb.ws/'>Недвижимость</a></li>
+			<li><a href='https://zarulem.ws/'>Авто</a></li>
+			<li><a href='https://afisha.cheb.ru/kino/'>Киноафиша</a></li>
+			<li><a href='https://cheboksary.ws/'>Карта</a></li>
+			<li><a href='https://na-svyazi.ru/'>На-связи</a></li>
+			<li><a href='https://foto.cheb.ru/'>Фото</a></li>
+			<li><a href='https://pogoda21.ru/'>Погода</a></li>
+			<li><a href='https://cheb.ru/doma/'>Адреса</a></li>
+			<li><a href='https://cheb.ru/obmen.htm'>Курсы валют</a></li>
+			<li class='rubricssmal'><a href='/zakaz.htm'>Реклама на сайте</a></li>
+			<li class='rubricssmal'><a href='/login.php?from=https://zarulem.ws/' rel='nofollow'>вход</a>, <a href='https://forum.na-svyazi.ru/?act=Reg&CODE=00'>регистрация</a></li>      	</ul>
+	</div>
+	<div class="butt b-close-mm butt-close-main-menu"><img src="https://cheb.ru/i/close.svg"></div>
+</div></noindex>
+
+<script>
+</script>
+
+
+<script src='https://cheb.ru/js/pda.js?ver=2.4' async></script>
+<link rel="stylesheet" href="https://cheb.ru/css/jquery.lazyloadxt.spinner.css?ver=2.4">
+<script src="https://cheb.ru/js/jquery.lazyloadxt.js?ver=2.4" async></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26244899-2"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-26244899-2');
+</script>
+<div id='toTop'><img src='https://afisha.cheb.ru/i/gal.png' alt='наверх'></div>
+</div></div>
+
+
+<script src="https://cheb.ru/js/addons.js?v=2.4"></script>
+
+
+
+<script>(function(){var js = "window['__CF$cv$params']={r:'85d97c6bec5d70b3',t:'MTcwOTI5OTY2My4wNTcwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Карта города Чебоксары</title>
+<meta http-equiv='content-type' content='text/html; charset=windows-1251'/>
+<meta name='Description' content='Наиболее актуальная карта Чебоксар: все дома с подъездами, стройки, мелкие объекты, дороги с разметкой и пешеходные дорожки.'>
+<meta name='robots' content='all'>
+<link rel='image_src' href='https://cheboksary.ws/default-big-original.png' />
+<meta content='ru_RU'     property='og:locale' />
+<meta content='article'   property='og:type' />
+<meta property='og:title' content='Подробная карта города Чебоксары' />
+<meta property='og:description' content='Наиболее актуальная карта Чебоксар: все дома с подъездами, стройки, мелкие объекты, дороги с разметкой и пешеходные дорожки.' />
+<meta property='og:image' content='https://cheboksary.ws/default-big-original.png' />
+<meta name='MobileOptimized' content='640' />
+<meta name='viewport' content='user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1'>
+<meta name='HandheldFriendly' content='true'>
+<meta name='MobileOptimzied' content='width'>
+<meta http-equiv='cleartype' content='on'>
+<meta name='format-detection' content='address=no'>
+<meta name='referrer' content='unsafe-url' />
+<meta name="msapplication-TileColor" content="#2d89ef" />
+<meta name="theme-color" content="#ffffff" />
+<link rel="icon" href="/i/fav/safari-pinned-tab.svg" type="image/svg+xml" />
+<link rel="icon" type="image/png" sizes="32x32" href="/i/fav/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/i/fav/favicon-16x16.png" />
+<link rel="manifest" href="/i/fav/site.webmanifest" />
+<link rel="mask-icon" href="/i/fav/safari-pinned-tab.svg" color="#3e8fce" />
+<link rel="apple-touch-icon" sizes="180x180" href="/i/fav/apple-touch-icon.png" />
+<script type='text/javascript' src='https://cheboksary.ws/js/jquery.min.js?ver=2.4'></script>
+<link rel='stylesheet' type='text/css' href='/css/text.css?ver=2.4'>
+<link rel="stylesheet" type="text/css" href="https://cheb.ru/css/general.css?ver=2.4">
+<link rel='stylesheet' type='text/css' href='https://cheboksary.ws/css/leaflet_171.css?ver=2.4' />
+<link rel='stylesheet' type='text/css' href='https://cheb.ru/css/auto.css?ver=2.4'>
+<link rel='stylesheet' type='text/css' href='https://cheb.ru/css/market.css?ver=2.4'>
+<script src='https://cheboksary.ws/js/leaflet_171.js?ver=2.4'></script>
+<script src="https://cheboksary.ws/js/L.MeasuringTool.js?ver=2.4"></script>
+<script src="https://cheboksary.ws/js/geo.js?ver=2.4"></script>
+<script src="https://cheboksary.ws/js/Icon.Label.js?ver=2.4"></script>
+<script src="https://cheboksary.ws/js/history.min.js?ver=2.4"></script>
+</head>
+<body class='site-map'>
+<div class='menu_top'>
+	<div>
+		<div style='display:none' class='menu-name'>
+			Карта Чувашии		</div>
+		<form style='display:none' class='menu-poisk' name="poisk" action="https://cheb.ru/search/?" method="get">
+			<div id="search-form">
+				<div style="flex: 20 1 auto"><input class="anim" type="text" name="q" id="q" size="18" value="" placeholder="Поиск в справочнике" autocomplete="off"></div>
+				<div style="flex: 1 1 auto;position: relative"><input class="anim" type="submit" value="Найти"><span class="anim"></span></div>
+			</div>
+		</form>
+		<div class='menu-profil'>
+			<noindex><a href='/login.php?from=https://cheboksary.ws/' rel='nofollow'>вход</a></noindex> / <noindex><a href='https://forum.na-svyazi.ru/?act=Reg&CODE=00' rel='nofollow'>регистрация</a></noindex>		</div>
+		<ul>
+			<li>
+				<a class='anim mdown' href='https://cheb.ru/'>Cheb.ru</a>
+				<ul>
+					<li class='menu-none'><a href='https://cheb.ru/doma/'>Справочник cheb.ru</a></li>
+					<li><a href='https://cheb.ru/doma/'>Список улиц и домов</a></li>
+					<li><a href='https://cheb.ru/chuvashia/'>Все населенные пункты</a></li>
+					<li><a href='https://cheb.ru/360/'>Сферические панорамы</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='https://forum.na-svyazi.ru/'>Форумы</a>
+				<ul>
+					<li class='menu-none'><a href='https://forum.na-svyazi.ru/'>Форумы "На-связи"</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=74">Работа</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=1">Интернет</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=3">Связь</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=9">Компьютеры</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=33">Барахолка</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=78">Бизнес</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=79">Недвижимость</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=45">Товары, услуги и цены</a></li>
+					<!--<li><a href="https://forum.na-svyazi.ru/?showforum=337">Коронавирус</a></li>-->
+					<li><a href="https://forum.na-svyazi.ru/?showforum=109">Семья и дом</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=38">Районы Чувашии</a></li>
+					<li><a href="https://forum.na-svyazi.ru/?showforum=21">Развлечения</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='https://cheb.ru/news/'>Новости</a>
+				<ul>
+					<li class='menu-none'><a href='https://cheb.ru/news/'>Новости Чебоксар, Чувашии</a></li>
+					<li><a href="//zarulem.ws/news.htm">Автоновости</a></li>
+					<li><a href="//cheb.ru/news_biz.htm">Бизнес-новости</a></li>
+					<li><a href="//cheb.ru/news/blagoustrojstvo/">Благоустройство</a></li>
+					<li><a href="//cheb.ru/news/dtp/">ДТП</a></li>
+					<li><a href="//cheb.ru/news/zhkh/">ЖКХ</a></li>
+					<li><a href="//na-svyazi.ru/news/">Информационные технологии</a></li>
+					<li><a href="//cheb.ru/news/kultura/">Культура</a></li>
+					<li><a href="//cheb.ru/news/medicina/">Медицина</a></li>
+					<li><a href="//cheb.ws/news.htm">Недвижимость</a></li>
+					<li><a href="//cheb.ru/news/obschestvennyj-transport/">Общественный транспорт</a></li>
+					<li><a href="//cheb.ru/news/pogoda/">Погода</a></li>
+					<li><a href="//cheb.ru/news/politika/">Политика</a></li>
+					<li><a href="//cheb.ru/news/proisshestviya/">Происшествия</a></li>
+					<li><a href="//cheb.ru/news/deti/">Родителям</a></li>
+					<li><a href="//cheb.ru/news/sport/">Спорт</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='https://forum.na-svyazi.ru/?showforum=74'>Работа</a>
+				<ul>
+					<li class='menu-none'><a href='https://forum.na-svyazi.ru/?showforum=74'>Форум "Работа"</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=108'>Поиск работы</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=144'>Работа для студентов и школьников</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=169'>Временные вакансии</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=185'>Вакансии без указания зарплаты</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=279'>Вакансии в Москве и других регионах</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='https://cheb.ws/'>Недвижимость</a>
+				<ul>
+					<li class='menu-none'><a href='https://cheb.ws/'>Сайт "Недвижимость Чувашии"</a></li>
+					<li><a href="https://cheb.ws/news.htm">Новости недвижимости</a></li>
+					<li><a href="https://cheb.ws/1komnat/">Однокомнатные квартиры</a></li>
+					<li><a href="https://cheb.ws/2komnat/">Двухкомнатные квартиры</a></li>
+					<li><a href="https://cheb.ws/3komnat/">Трёхкомнатные квартиры</a></li>
+					<li><a href="https://cheb.ws/4komnat/">Четырёхкомнатные квартиры</a></li>
+					<li><a href="https://cheb.ws/doms/">Коттеджи</a></li>
+					<li><a href="https://cheb.ws/komnaty/">Комнаты</a></li>
+					<li><a href="https://cheb.ws/garag/">Гаражи</a></li>
+					<li><a href="https://cheb.ws/komerc/">Коммерческая недвижимость</a></li>
+					<li><a href="https://cheb.ws/ned/?agency=-">Объявления частных лиц</a></li>
+					<li><a href="https://cheb.ws/ned/?map=1">Недвижимость на карте</a></li>
+					<li><a href="https://cheb.ws/foto.htm">Новые фото строек</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='https://zarulem.ws/'>Авто</a>
+				<ul>
+					<li class='menu-none'><a href='https://zarulem.ws/'>Автопортал</a></li>
+					<li><a href='//forum.zarulem.ws/?act=Search&CODE=getactive'>Последние темы автофорума</b></a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=24">Автофорум "За рулём"</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=117">Автоновости</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=147">Выбор авто</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=134">Гараж</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=99">Праворульные авто</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=135">Мото</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=112">Ремонт, запчасти, тюнинг</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=111">Автопроисшествия</a></li>
+					<li><a href="//forum.zarulem.ws/?showforum=100">Общественный транспорт</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown'' href='https://afisha.cheb.ru/kino/'>Киноафиша</a>
+				<ul>
+					<li class='menu-none'><a href='https://afisha.cheb.ru/kino/'>Киноафиша Чебоксар</a></li>
+					<li><a href="https://afisha.cheb.ru/">Афиша</a></li>
+					<li><a href="https://afisha.cheb.ru/weekend.htm">Куда пойти в выходные</a></li>
+					<li><a href="https://afisha.cheb.ru/teatr/">Театральная афиша</a></li>
+					<li><a href="https://afisha.cheb.ru/kafe.htm">Кафе, бары, рестораны</a></li>
+					<li><a href="https://afisha.cheb.ru/go/koncert/">Концерты</a></li>
+					<li><a href="https://cheb.ru/news/detyam/">Мероприятия для детей</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown active' href='https://cheboksary.ws/'>Карта</a>
+				<ul>
+					<li class='menu-none'><a href='https://cheboksary.ws/'>Карта Чувашии</a></li>
+					<li><a href="https://cheboksary.ws/god/9980/">Карта возраста домов</a></li>
+					<li><a href="https://cheboksary.ws/air/">Фото с высоты</a></li>
+					<li><a href="https://cheboksary.ws/god/9987/">Карта архитекторов</a></li>
+					<li><a href="https://cheb.ru/360/">Сферические панорамы</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class='anim mdown' href='javascript:void(0)'>Ещё</a>
+				<ul>
+					<li><a href='https://na-svyazi.ru/'>На-связи</a></li>
+					<li><a href='https://cheb.ru/spravka/'>Справочник</a></li>
+					<li><a href='https://foto.cheb.ru/'>Фото</a></li>
+					<li><a href='https://pogoda21.ru/'>Погода</a></li>
+					<li><a href='https://cheb.ru/doma/'>Адреса</a></li>
+					<li><a href='https://cheb.ru/obmen.htm'>Курсы валют</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=186'>Покупки</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showforum=33'>Барахолка</a></li>
+				</ul>
+			</li>
+						<li class='moders'>
+				<a class='anim mdown'>Служба поддержки</a>
+				<ul>
+					<li><a href='https://cheb.ru/add.htm'>Добавить организацию</a></li>
+					<li><a href='https://afisha.cheb.ru/addnews.php'>Добавить новость</a></li>
+					<li><a href='https://forum.na-svyazi.ru/?showtopic=278246'>Сообщить об ошибке</a></li>
+					<li><a href='https://cheb.ru/license.htm'> Условия использования</a></li>
+					<li><a href='/zakaz.htm'>Реклама на сайте</a></li>
+					<li><a href='https://cheb.ru/contacts.htm'>Контакты</a></li>
+				</ul>
+					</ul>
+		<div class="menu-close" style='display:none'><img src="https://cheb.ru/i/close.svg"></div>
+	</div>
+</div><!--<div class="pagewrap" id="PageWrap" style='height:100% !important;'><div class="main-layer layer-size">-->
+<div id='headers'>
+<div class="ru360120"><div class='ru384120'><div><noindex><a href="https://cheb.ru/g-aXJ44bIrsQ" target="_blank" rel="nofollow"><img data-src="https://afisha.cheb.ru/css/bg/2992.gif?id=2.4" class="lazyload"></a></noindex></div></div></div>
+<div>
+	<h1><a href='/' target='_top'><nobr>Чебоксары карта</nobr></a></h1>
+	<p style="font-family: Verdana; font-size: 13px;"><b><nobr><a href='/'>многоуровневая карта города</a></nobr></b>
+		</p>
+</div>
+
+<div class="ru360120"><div class='ru384120'><div><noindex><a href="https://cheb.ru/g-fwGQzcboY2" target="_blank" rel="nofollow"><img data-src="https://afisha.cheb.ru/css/bg/3383.gif?id=2.4" class="lazyload"></a></noindex></div></div></div></div><div style='background-color:#ffbe54;height:4px' id='lineorg'></div>
+<div class='he100 mapage'>
+	<div id='rightmenu'>
+		<div class='noprint block200'>
+<div class='menudiv'>
+<h6>Разделы</h6>
+<ul class='usermenu'>
+ <li><a href='/'>Карта Чебоксар</a></li>
+ <li><a href='https://cheb.ru/maps.htm'><b>Другие виды карт</b></a> (12)</li>
+ <!--<li><a href='/probki/'><b>Пробки в Чебоксарах</b></a></li>-->
+ <li><a href='//cheb.ws/market/catalog/?map=1'><b>Недвижимость на карте</b></a></li>
+ <li><a id='link360ID' href='https://cheb.ru/360/'>Сферические панорамы</a> <sup style='color:red'><b>new</b></sup></li>
+ <li><a id='linkhistoryID' href='/history/#xy=56.14607147738778,47.25099996144561&z=16&t=coordinate'>Старые фото на карте</a></li>
+ <li>
+ 	<a id='linkfotoID' href='/fotos/-/#xy=56.14607147738778,47.25099996144561&z=16&t=coordinate'>Фото на карте</a>
+ 	<div class='icon_tags'>
+		<a id='tagvecherID' href="/tag/vecher/"><img src="/i/evening.png" title="Вечерние фото"></a>
+		<a id='tagzimaID' href="/tag/zima/"><img src="/i/winter.png" title="Зимние фото"></a>
+		<a id='tagletoID' href="/tag/leto/"><img src="/i/summer.png" title="Летние фото"></a>
+		<a id='tagosenID' href="/tag/osen/"><img src="/i/autumn.png" title="Осенние фото"></a>
+ 	</div>
+ </li>
+ <li><a id='linkairID' href='/air/#xy=56.14607147738778,47.25099996144561&z=16&t=coordinate'>Фото с высоты на карте</a></li>
+ <li><a href='//cheb.ru/doma/'><b>Список улиц и домов</b></a></li>
+ <li><a href='/probki-ya.htm'>Пробки в Чебоксарах</a></li>
+<!-- <li><a href='//na-svyazi.ru/providers/'>Карта домашних сетей</a></li> -->
+</ul>
+</div>
+
+<div class='ru200200'><div class="rurek map"><noindex><a href="https://cheb.ru/g-xpkvO2Bt0R" target="_blank" rel="nofollow">Речной порт</a></noindex></div><div><noindex><a href="https://cheb.ru/g-xpkvO2Bt0R" target="_blank" rel="nofollow"><img data-src="https://afisha.cheb.ru/css/bg/2673.gif?id=2.4" class="lazyload"></a></noindex></div></div>
+<div class="menudiv">
+	<h6><a href='https://forum.na-svyazi.ru'>Форумы</a></h6>
+	<ul class='chebmenu'>
+		<li><a href="https://forum.na-svyazi.ru/?act=Search&CODE=getactive"><b>Последние темы</b></a> (<a href="//forum.zarulem.ws/?act=Search&CODE=getactive">авто</a>)</li>
+		<li><a href="https://forum.na-svyazi.ru/?showforum=33">Барахолка</a>, <a href="https://forum.na-svyazi.ru/?showforum=78">Бизнес</a>, <a href="https://forum.na-svyazi.ru/?showforum=80">Реклама</a></li>
+		<li><a href="https://forum.na-svyazi.ru/?showforum=74">Работа</a>, <a href="https://forum.na-svyazi.ru/?showforum=157">Частные услуги</a></li>
+		<li><a href="https://forum.na-svyazi.ru/?showforum=121">Культура</a>, <a href="https://forum.na-svyazi.ru/?showforum=109">Семья и дом</a></li>
+		<li><a href="https://forum.na-svyazi.ru/?showforum=4">Связь в Чувашии</a>, <a href="https://forum.na-svyazi.ru/?showforum=54">Фото</a></li>
+		<li><a href="https://forum.na-svyazi.ru/?showforum=1">Интернет</a>, <a href="https://forum.na-svyazi.ru/?showforum=9">Компьютеры</a></li>
+		<li><a href="https://forum.na-svyazi.ru/?showforum=25">Спорт</a>, <a href="https://forum.na-svyazi.ru/?showforum=38">Районы Чувашии</a></li>
+		<li><a href="//forum.zarulem.ws">Автофорум "За рулём"</a></li>
+		<li><a href="https://forum.na-svyazi.ru/?showforum=20">Болтология</a>, <a href="https://forum.na-svyazi.ru/?showforum=21">Развлечения</a></li>
+		<li><a href="https://forum.na-svyazi.ru/?showforum=22">Знакомства</a>, <a href="https://forum.na-svyazi.ru/?showforum=104">Встречи</a></li>
+	</ul>
+</div>
+
+<div class='ru200200'><div class="rurek map"><noindex><a href="https://cheb.ru/g-OhYxnowzDp" target="_blank" rel="nofollow">Полезные ссылки</a></noindex></div><div><noindex><a href="https://cheb.ru/g-OhYxnowzDp" target="_blank" rel="nofollow"><img data-src="https://afisha.cheb.ru/css/bg/2881.gif?id=2.4" class="lazyload"></a></noindex></div></div>
+
+</div>	</div>
+	<div id='toptd'>
+	<div class='pdas search'>
+				<div style='position:relative'><div class='menupda'><div class='butt-open-main-menu-new'></div></div><input type='text' name='q' id='q' size='32' value='' placeholder='поиск на карте cheboksary.ws' onkeyup='go_alt_q(this)'></div>
+	</div>
+	<div class='loadd'><div><img src='/i/35.svg'></div></div>
+	<div id="rourebus" style='display:none' title="Маршруты транспорта"><div>
+		<div class='routecity'><a href='javascript:void(0)' id='titlecity1' onClick="routecity(1, this)" class='activer'>Чебоксары</a> <a href='javascript:void(0)' id='titlecity2' onClick="routecity(2, this)" >Новочебоксарск</a> <a href='javascript:void(0)' id='titlecity3' onClick="routecity(3, this)" >Межгород</a> </div><div class='routebusmain'><div id='city1' style='display:block'><table class='routebust'><tr><td><strong>Маршрутки</strong><br><img src='/i/routetype1.png'></td><td><a href='/route/444/' >Тест</a> <a href='/route/a5/' >5</a> <a href='/route/7new/' >7</a> <a href='/route/7em/' >7Э</a> <a href='/route/a12ne/' >12</a> <a href='/route/a24/' >24</a> <a href='/route/m30n/' >30</a> <a href='/route/m43/' >43</a> <a href='/route/m44n/' >44</a> <a href='/route/m47n/' >47</a> <a href='/route/m54n/' >54</a> <a href='/route/m65/' >65</a> <tr><td><strong>Автобусы</strong><br><img src='/i/routetype2.png'></td><td><a href='/route/a15e/' >15</a> <a href='/route/a26ne/' >26</a> <a href='/route/m33n/' >33</a> <a href='/route/m35n/' >35</a> <a href='/route/m37n/' >37</a> <a href='/route/m41n/' >41</a> <a href='/route/m42ne/' >42</a> <a href='/route/m45ne/' >45</a> <a href='/route/a46ne/' >46</a> <a href='/route/m52n/' >52</a> <tr><td><strong>Троллейбусы</strong><br><img src='/i/routetype3.png'></td><td><a href='/route/t1/' >1</a> <a href='/route/t2/' >2</a> <a href='/route/t3new/' >3</a> <a href='/route/t4/' >4</a> <a href='/route/5t_ne/' >5</a> <a href='/route/6t_ne/' >6</a> <a href='/route/8t_ne/' >8</a> <a href='/route/t9_ne/' >9</a> <a href='/route/t10/' >10</a> <a href='/route/11t_n/' >11</a> <a href='/route/t14/' >14</a> <a href='/route/t15/' >15</a> <a href='/route/t17/' >17</a> <a href='/route/t18ne/' >18</a> <a href='/route/t20/' >20</a> <a href='/route/t21/' >21</a> <a href='/route/t22ne/' >22</a> </td></tr></table></div><div id='city2' style='display:none'><table class='routebust'><tr><td><strong>Маршрутки</strong><br><img src='/i/routetype1.png'></td><td><a href='/route/m12/' >12</a> <a href='/route/m15/' >15</a> <a href='/route/m20k/' >20к</a> <a href='/route/m20/' >20</a> <tr><td><strong>Автобусы</strong><br><img src='/i/routetype2.png'></td><td><a href='/route/m14/' >14</a> <a href='/route/m17n/' >17</a> <a href='/route/m21/' >21</a> <tr><td><strong>Троллейбусы</strong><br><img src='/i/routetype3.png'></td><td><a href='/route/t52/' >52</a> <a href='/route/t53/' >53</a> <a href='/route/t54k/' >54к</a> <a href='/route/t55k/' >55к</a> </td></tr></table></div><div id='city3' style='display:none'><table class='routebust'><tr><td><strong>Маршрутки</strong><br><img src='/i/routetype1.png'></td><td><a href='/route/m125/' >125</a> <a href='/route/m162k/' >162</a> <a href='/route/m220/' >220</a> <a href='/route/m234n/' >234</a> <a href='/route/a247/' >247</a> <a href='/route/m262/' >262</a> <a href='/route/m270n/' >270</a> <a href='/route/m271/' >271</a> <a href='/route/m325/' >325</a> <a href='/route/m331/' >331</a> <a href='/route/m333/' >333</a> <tr><td><strong>Автобусы</strong><br><img src='/i/routetype2.png'></td><td><a href='/route/101c/' >101с</a> <a href='/route/m32n/' >101</a> <a href='/route/a102/' >102т</a> <a href='/route/m2707/' >2707</a> </td></tr></table></div>	</div></div></div>
+	<div id='map' style='width:100%;height:910px'></div>
+	<script type="text/javascript">
+var markerspano, markerspano1, map, params, markerGroup, clickGroup, polygon, popupm, polygon, photoLayer, markerGroupBus, godt;
+var anry	   = [];
+var markerbus  = [];
+var estdomflag = false;
+var typefind = 'iall'
+var last = 0;
+var newmaps = false;
+var yearsfoto = '';
+var classfoto = '';
+var armap = false;
+var metget = false;
+var modeclick = true;
+var modemap = 'map';
+var mode1 = '';
+var modea = false;
+var getadmin = false;
+var q = '';
+var typemap = 'coordinate';
+var typesite = true;
+var minzoom = 3;
+var zoom = 13;
+var cx = '56.11833313731014';
+var cy = '47.27811813354493';
+var center = '56.11833313731014,47.27811813354493';
+var mappda = false;
+var txtype = "<option value='keys-wifi'>WiFi-хотспоты</option><option value='km'>Километровые столбики</option><option value='zap'>Автозапчасти магазины</option><option value='active'>Активный отдых</option><option value='aserv'>Автосервисы</option><option value='atel'>Ателье</option><option value='moika'>Автомойки</option><option value='autostoj'>Автостоянки</option><option value='autosalon'>Автосалоны</option><option value='azs'>АЗС</option><option value='apteka'>Аптеки</option><option value='bank'>Банки</option><option value='dacha'>Коллективные сады</option><option value='voda'>Бассейны</option><option value='lib'>Библиотеки</option><option value='bizcentr'>Бизнес-центры</option><option value='bol'>Больницы и поликлиники</option><option value='vet'>Ветеринарные клиники</option><option value='garazh'>Гаражи</option><option value='det'>Детские товары</option><option value='dom'>Товары для дома</option><option value='ds'>Детские сады</option><option value='galant'>Галантерейные магазины</option><option value='himmag'>Бытовая химия</option><option value='hotels'>Гостиницы</option><option value='zoo'>Зоомагазины</option><option value='instrum'>Инструменты магазины</option><option value='kafe'>Кафе</option><option value='kino'>Кинотеатры</option><option value='kosm'>Косметика</option><option value='kot'>Коттеджные поселки</option><option value='kt'>Канцелярские товары</option><option value='mebel'>Мебельные магазины</option><option value='book'>Книжные магазины</option><option value='clubs'>Клубы</option><option value='computers'>Компьютерные фирмы</option><option value='medchasnye'>Медицинские центры частные</option><option value='mil'>Полиция</option><option value='museums'>Музеи</option><option value='notarius'>Нотариусы</option><option value='obuv'>Обувные магазины</option><option value='odezhda'>Одежда магазины</option><option value='obuvmaster'>Ремонт обуви</option><option value='optika'>Оптика салоны</option><option value='pam'>Памятники</option><option value='parik'>Парикмахерские</option><option value='park'>Парки</option><option value='pochta'>Почтовые отделения</option><option value='strmat'>Производство стройматериалов</option><option value='prodmag-cm'>Продовольственные магазины</option><option value='remont'>Товары для ремонта</option><option value='bazar'>Рынки</option><option value='salon'>Салоны связи</option><option value='sberbank'>Сбербанк отделения</option><option value='bani'>Сауны</option><option value='sport'>Стадионы</option><option value='sport2'>Спортшколы</option><option value='sporttovary'>Спортивные товары</option><option value='stolov'>Столовые</option><option value='stomat'>Стоматологии</option><option value='theatres'>Театры</option><option value='tip'>Типографии</option><option value='trener'>Тренажерные залы</option><option value='sanat'>Санатории и дома отдыха</option><option value='shkola'>Школы</option><option value='flowers'>Цветы</option><option value='uvelir'>Ювелирные салоны</option>"
+var txcats = "<option value='0'>Обычное фото</option><option value='1'>ФОТО ДОМА</option><option value='2'>Стройка</option><option value='5'>Территория вокруг дома</option><option value='6'>Вход в организацию</option><option value='13'>Улица</option><option value='7'>Интерьер организации</option><option value='10'>Примеры работ</option><option value='9'>Планировка (схема)</option><option value='8'>Внутри дома (подъезды)</option><option value='15'>Проекты (от архитекторов)</option><option value='4'>Фото с высоты</option><option value='21'>360 Панорама</option><option value='22'>Гигапанорама</option><option value='16'>Реклама</option><option value='3'>Природа</option><option value='11'>Мероприятия</option><option value='17'>Объекты (клипарт)</option><option value='18'>Люди</option><option value='12'>Старое фото</option><option value='14'>Архив (закрытая организация)</option><option value='19'>Плохое фото</option><option value='20'>Историческое фото</option>"
+var hash = document.location.hash;
+if(hash){
+	var hash = hash.substr(1, hash.length - 1).split('&'),
+	params = {}; params.line = '';
+	for(var i = 0, l = hash.length, param; i < l; i++){
+		param = hash[i].split('=');
+		if(param[0] && param[1]) params[param[0]] = param[1];
+	}
+	if(params.xy && params.z && params.panorama != 'true'){
+//		params.xy = decodeURI(params.xy);
+		params.xy = params.xy.replace('%2C', ',')
+		console.log(params.xy);
+		zoom   = params.z*1;
+		xxyy   = params.xy.split(',');
+		center = xxyy[0]+', '+xxyy[1];
+		var cx = xxyy[0];
+		var cy = xxyy[1];
+	}
+	if(params.t){
+		typemap = params.t;
+		newmaps = false;
+	}
+}
+</script>
+<script src="https://cheboksary.ws/js/leafletJS-.js?ver=2.4"></script>
+<link href="https://cheb.ru/css/font-awesome.css" rel="stylesheet">
+<script>
+var timersID;
+
+if(armap == false){
+	map.on('baselayerchange viewreset moveend load zoomlevelschange resize unload overlayadd layeradd', function(event){
+		lastEvent_showlist1 = new Date();
+		timersID = setTimeout(fireIfLastEvent_showlist1, 500);
+	});
+}
+
+map.on('click', function(event){
+	if(event.originalEvent.target.attributes.id){
+		if(event.originalEvent.target.attributes.id.nodeValue != 'map'){
+			return false;
+		}
+	} else {
+		return false;
+	}
+	ab  = map.getBounds().toBBoxString();
+	pos = event.latlng.toString();
+	if(map.getZoom() > 15 && typesite && modemap != '9985' && modemap != 'liner' && modemap != 'fotos' && modemap != 'tags' && modemap != 'pano' && modeclick && mode1 != 'fotodomcolor'){
+		$.getJSON("//cheboksary.ws/xml/xml-new.xml?ab="+ab+"&xy="+pos, function(res){
+			if(res){
+				if(map.hasLayer(clickGroup))  map.removeLayer(clickGroup);
+				if(map.hasLayer(markerGroup)) map.removeLayer(markerGroup);
+				clickGroup = new L.FeatureGroup();
+				$.each(res, function() {
+					var marker = L.marker([this.x, this.y], {icon: mainIcon, ids: 1, title: this.title}).bindPopup(this.txt).openPopup();
+					clickGroup.addLayer(marker);
+				});
+				map.addLayer(clickGroup);
+				clickGroup.eachLayer(function(layer) {56.12447823306758,47.18243300914765
+					layer.openPopup();
+				});
+			} else {
+				var latlng = event.latlng;
+				var hidl = '';
+				var hidl = "<a href='https://cheb.ru/doma/foto.fxhtml?x="+latlng.lat+"&y="+latlng.lng+"' target='_blank'>Фотоистория места</a>";
+				var hidh = "<a href='https://cheb.ru/fotohis.php?x="+latlng.lat+"&y="+latlng.lng+"' target='_blank'>Исторические фото</a>";
+				popupm = L.marker([latlng.lat, latlng.lng], {icon: grayIcon}).bindPopup("<div class='clickmenu'><div><a href='javascript:void(0)' style='display:inline-block;padding:0' onClick='rightbut(pos,1)'>Фотографии рядом</a> (<a href='javascript:void(0)' style='display:inline-block;padding:0' onClick='rightbut(pos,1)'>метки</a>, <a href='javascript:void(0)' style='display:inline-block;padding:0' onClick='rightbut(pos,4)'>фото</a>)</div><a href='javascript:void(0)' onClick='rightbut(pos,5)'>Фото c высоты</a><a href='javascript:void(0)' onClick='rightbut(pos,2)'>Ближайшие организации (список)</a><a href='javascript:void(0)' onClick='rightbut(pos,3)'>Ближайшие организации (метки)</a>"+hidl+hidh+"<a href='#' style='float:right;font-size:10px;padding:4px 0px;' onclick=\"copytext('https://cheboksary.ws/#xy="+latlng.lat+","+latlng.lng+"&z=18&t="+typemap+"&met="+latlng.lat+","+latlng.lng+"');return false\" title='сохранить в буфер ссылку'><img src='/i/ico-link.png' style='width:8px;vertical-align:middle'> ссылка</a><a href='#' onclick=\"copytext('"+latlng.lat+","+latlng.lng+"');return false\" title='сохранить в буфер координату' style='display:inline-block;padding:4px 0px 4px 16px;float:left;font-size:10px'>&#9022; "+latlng.lat+","+latlng.lng+"</a><div style='clear:both'></div></div>").addTo(map).openPopup();
+				popupm.on('popupclose',function(e){
+					map.removeLayer(popupm);
+				});
+			}
+		});
+	}
+});
+
+function copytext(txt) {
+	var $tmp = $("<textarea>");
+	$("body").append($tmp);
+	$tmp.val(txt).select();
+	document.execCommand("copy");
+	$tmp.remove();
+}
+
+var iconLabel = L.Icon.Label.extend({
+	options: {
+		labelAnchor: new L.Point(5, 5),
+		wrapperAnchor: new L.Point(12, 30),
+		iconAnchor: new L.Point(0, 0),
+		labelText: null,
+		iconUrl: 'https://cheboksary.ws/i/mark01.png',
+		iconSize: new L.Point(23, 30),
+		popupAnchor: new L.Point(12, 30)
+	}
+});
+
+var hash = document.location.hash;
+if(hash){
+	var hash = hash.substr(1, hash.length - 1).split('&'),
+	params = {}; params.line = '';
+	for(var i = 0, l = hash.length, param; i < l; i++){
+		param = hash[i].split('=');
+		if(param[0] && param[1]) params[param[0]] = param[1];
+	}
+	console.log(params);
+	if(params.met && params.xy){
+		xxyy   = params.met.split(',');
+		var marker1 = L.marker([xxyy[0], xxyy[1]], {icon: mainIcon, title: 'Метка'}).addTo(map);
+	}
+}
+
+
+
+
+function getRandomFloat(min, max) {
+	return Math.random() * (max - min) + min;
+}
+
+	
+var editor = false;
+
+
+function showlist(type, list, fit, ab){
+	if(ab) fit = false;
+	if(map.hasLayer(clickGroup))  map.removeLayer(clickGroup);
+	if(map.hasLayer(markerGroup)) map.removeLayer(markerGroup);
+	abc = '';
+	if(ab != '') abc = '&ab='+ab;
+	lasturl = '';
+	if(last != 0) lasturl = "&last=" + last;
+		var_estdomflag = '';
+	if(estdomflag) var_estdomflag = '&estdomflag=';
+	$.getJSON('https://cheboksary.ws/xml/find.xml?'+type+'='+list+abc+lasturl+var_estdomflag, {}, function(res){
+			if(res){
+			markerGroup = new L.FeatureGroup();
+			$.each(res, function() {
+				if(this.x != 0 && this.y != 0){
+					if(type == 'story'){
+						if(proverka1(this.ids) === false){
+							setmet = true;
+							anry.push(this.ids);
+						} else {
+							setmet = false;
+						}
+					} else {
+						setmet = true;
+					}
+					if(setmet){
+						if(this.lines){
+							color = 'red';
+							if(this.color && this.color != '') color = this.color;
+							var polygon = L.polyline(this.lines, {color: color, allowIntersection: false, ids: this.ids, color: color, fillColor: color, fillOpacity: 0.4, weight: 2, title: this.title}).bindTooltip(this.title);
+							if(this.txt && this.txt != '') polygon.bindPopup(this.txt);
+							markerGroup.addLayer(polygon);
+						} else if(this.line){
+						 	if(this.season){
+						 		fillColor   = '#f00';
+						 		fillOpacity = 0.3;
+						 		stroke	  = false;
+						 		if(this.odom && this.odom == 1){
+						 			fillColor   = '#0f0';
+						 		}
+								var polygon = L.polygon(this.line, {ids: this.ids, dom: this.dom, fillColor: fillColor, fillOpacity: fillOpacity,  stroke: false, title: this.title});
+//								var polygon = L.polygon(this.line, {ids: this.ids, dom: this.dom, color: color, fillColor: fillColor, fillOpacity: fillOpacity, weight: weight, stroke: stroke, title: this.title});
+						 		polygon.on('click', function() {
+									$.get('https://cheboksary.ws/class/getmet.php?id=' + this.options.dom + '&type=season&season=', function(data){
+										polygon.bindPopup(data).openPopup();
+/*										$('.slider_season').slick({
+											autoplay: false,
+											autoplaySpeed: 5000,
+											speed: 500,
+											dots: false,
+											slidesToShow: 2,
+											slidesToScroll: 1,
+											infinite: false,
+											arrows: true,
+											rows: 1,
+											variableWidth: true,
+											adaptiveHeight: true,
+											responsive: [{
+												breakpoint: 940,
+												settings: {
+													slidesToShow: 1,
+													slidesToScroll: 1
+												}
+											}]
+										});*/
+/*										$('.addvecher').click(function(){
+											$.get('https://cheboksary.ws/class/getmet.php?id=' + $(this).data('id') + '&dom=' + $(this).data('dom') + '&type=setseason&set=vecher', function(data){
+											})
+//											polygon.setStyle({fillColor: '#000'});
+										});
+										$('.addzima').click(function(){
+											$.get('https://cheboksary.ws/class/getmet.php?id=' + $(this).data('id') + '&dom=' + $(this).data('dom') + '&type=setseason&set=zima', function(data){
+											})
+//											polygon.setStyle({fillColor: '#ff0'});
+										});
+										$('.addosen').click(function(){
+											$.get('https://cheboksary.ws/class/getmet.php?id=' + $(this).data('id') + '&dom=' + $(this).data('dom') + '&type=setseason&set=osen', function(data){
+											})
+//											polygon.setStyle({fillColor: '#ff0'});
+										});
+										$('.addvesna').click(function(){
+											$.get('https://cheboksary.ws/class/getmet.php?id=' + $(this).data('id') + '&dom=' + $(this).data('dom') + '&type=setseason&set=vesna', function(data){
+											})
+//											polygon.setStyle({fillColor: '#ff0'});
+										});*/
+									});
+						 		});
+//						 		if(zov != '' && map.getZoom() > 15){
+//					 				ico = createLabelIconseson('zov', zov);
+//					 				L.marker([this.x, this.y], {icon: ico, ids: this.ids, title: this.title}).addTo(map);
+//					 			} else {
+//					 			}
+						 	} else {
+								color = 'red'; weight = 2;
+								if(this.color && this.color   != '') color = this.color;
+								if(this.type && this.type == '9980') weight = 0;
+								if(this.godt){
+																		if(this.godt >= godt || godt == 0){
+										var polygon = L.polygon(this.line, {godt: this.godt, godtt: this.godtt, editcolor: this.editcolor, ids: this.ids, color: color, fillColor: color, fillOpacity: 0, weight: weight, title: this.title, txt: this.txt});
+									} else {
+										var polygon = L.polygon(this.line, {godt: this.godt, godtt: this.godtt, editcolor: this.editcolor, ids: this.ids, color: color, fillColor: color, fillOpacity: 0.4, weight: weight, title: this.title, txt: this.txt}).bindTooltip(this.title);
+									}
+								} else {
+									var polygon = L.polygon(this.line, {editcolor: this.editcolor, ids: this.ids, color: color, fillColor: color, fillOpacity: 0.4, weight: weight, title: this.title, txt: this.txt}).bindTooltip(this.title);
+								}
+							}
+							if(!this.season){
+								if(this.type && this.type == 'sect' && this.edit && (modea || editor)){
+									polygon.on('click', function() {
+										editcolor = this.options.editcolor;
+										$.get("/class/setsection.php?id="+this.options.ids+'&type=&type=&sect=', function(data){
+											if(data == 'clear'){
+												var editcolor = '#888888';
+											}
+											if(data == 'set'){
+												var editcolor = 'red';
+											}
+											polygon.setStyle({color: editcolor});
+											polygon.setStyle({fillColor: editcolor});
+										});
+									});
+								} else {
+									if(this.type && this.type == '9980'){
+									 	tss = this.txt;
+										polygon.on('click', function() {
+											polygon.bindPopup(this.options.txt).openPopup();
+										});
+									} else {
+										polygon.on('click', function() {
+											$.get('https://cheboksary.ws/class/getmet.php?id=' + this.options.ids + '&type=showallfotosab', function(data){
+												polygon.bindPopup(data).openPopup();
+											});
+										});
+									}
+								}
+							}
+							markerGroup.addLayer(polygon);
+						} else {
+							ico = mainIcon; estdom = true;
+							if(this.type && this.type == 'opa') ico = opaIcon;
+							if(this.type && this.type == 'fotos') ico = grayIcon;
+							if(this.type && this.type == 'nf'){
+								ico = window[this.icon];
+								document.getElementById('list').innerHTML = document.getElementById('list').innerHTML + this.txt1;
+							}
+							clas = 0;
+							if(this.pics && this.pics != ''){
+								ico = createLabelIcon23300('fotomet', "<img style='width:15px' src='//cheboksary.ws/i/fotoclass/"+this.pics+".png?34'>");
+								clas = this.class;
+							} else {
+								if(this.class){
+									if(this.class == 21 || this.class == 22){
+										ico = createLabelIcon2330('fotomet', "<img src='//cheboksary.ws/i/fotoclass/"+this.class+".png?31' style='width:10px;height:17px'>");
+									} else {
+										ico = createLabelIcon1017('fotomet', "<img src='//cheboksary.ws/i/fotoclass/"+this.class+".png?31' style='width:10px;height:17px'>");
+									}
+									clas = this.class;
+								}
+							}
+							if(type == 'story'){
+								ico = createLabelIcon1017('fotomet', "<img src='//cheboksary.ws/i/fotoclass/story"+this.iconcolor+".png?31' style='width:10px;height:17px'>");
+							}
+							if(this.type && this.type == 'domsm') ico = createLabelIcon('fotomet', "<img src='//cheboksary.ws/i/fotoclass/0.png' style='width:10px;height:17px'>");
+							var marker = L.marker([this.x, this.y], {icon: ico, clas: clas, estdom: estdom, ids: this.ids, types: this.type, draggable: modea, title: this.title});
+//							if(estdomopd != 0){
+//								marker.setZIndexOffset(1);
+//							}
+							if(modemap && modemap == 'fotos'){
+								if(clas == classfoto || classfoto == ''){
+									marker.setOpacity(1);
+									marker.setZIndexOffset(1);
+								} else {
+									marker.setOpacity(0);
+									marker.setZIndexOffset(2);
+								}
+							}
+							if(this.type && this.type == 'fotos'){
+								marker.on('click', function(e) {
+																		$.get('https://cheboksary.ws/class/getmet.php?id=' + this.options.ids + '&type=fotos', function(data){
+										marker.bindPopup(data).openPopup();
+									});
+								});
+							} else {
+								if(this.txt && this.txt != '') marker.bindPopup(this.txt);
+							}
+							if(modea && this.type && (this.type == 'firm' || this.type == 'domsm' || this.type == 'fotos')){
+								marker.on('dragend', function(event){
+									var reg	  = /[^0-9.,]/g;
+									var mark	 = event.target;
+									var position = mark.getLatLng().toString();
+									var id	   = this.options.ids;
+									var types	= this.options.types;
+									var position = position.replace(reg, '');
+									if(types == 'firm')  $.get("/class/setmetleafet.php?orgid="+id+"&xy="+position, function(data){});
+									if(types == 'domsm') $.get("/class/setmetleafet.php?domid="+id+"&xy="+position, function(data){});
+									if(types == 'fotos') $.get("/class/setmetleafet.php?fotoid="+id+"&xy="+position, function(data){});
+								});
+							}
+							if(type == 'story'){
+								markerspano.addLayer(marker);
+							} else {
+								markerGroup.addLayer(marker);
+							}
+						}
+					}
+				}
+				if(type == 'story'){
+					map.addLayer(markerspano);
+				} else {
+					map.addLayer(markerGroup);
+				}
+			});
+			if(type != 'story'){
+				if(fit && !hash){
+					map.fitBounds(markerGroup.getBounds(), {maxZoom: 18});
+				}
+				if((modemap == 'fotos' || modemap == 'tags') && yearsfoto != '' && yearsfoto.length == 8){
+					if(map.hasLayer(markerGroup) && !hash){
+						map.fitBounds(markerGroup.getBounds(), {maxZoom: 15});
+					}
+				}
+			}
+					}
+	});
+}
+
+function showlistab(type, list, fit){
+//	console.log(type + ', ' + list + ', ' + fit);
+	map.on('moveend load zoomlevelschange baselayerchange', function(e) {
+//	map.on('baselayerchange viewreset moveend load zoomlevelschange resize unload overlayadd', function(e) {
+//		console.log(e.type);
+		bounds_changed_map_all(type, list, fit);
+	});
+	bounds_changed_map_all(type, list, fit);
+}
+
+function bounds_changed_map_all(type, list, fit){
+	bounds_changed_map_event_all = new Date();
+	timersID = setTimeout(function(){
+		bounds_changed_map_func_all(type, list, fit)
+	}, 500);
+}
+
+function bounds_changed_map_func_all(type, list, fit){
+//	if(blocktime == false){
+		if(bounds_changed_map_event_all.getTime() + 500 <= new Date().getTime()){
+			ab = map.getBounds().toBBoxString();
+			showlist(type, list, fit, ab);
+		}
+//	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function onClickd(e){
+	url = this.options.url;
+	top.location.href = 'https://cheb.ru/doma/' + url + '.xhtml';
+}
+
+
+
+
+
+
+
+function adminfot(pos, id){
+//	$(pos).parent().parent().attr('style', 'width: 500px !important');
+	$('.adminfot').css('display', 'none');
+	$.get("/class/getadminfoto.php?id="+id, function(data){
+		$("#getadminfoto").html(data);
+//		var bLazy = new Blazy({});
+	});
+}
+
+function adminfotsub(){
+	var msg = $('#formx').serialize();
+	$.ajax({
+		type: 'POST',
+		url: '/class/getadminfotosave.php',
+		data: msg,
+		success: function(data) {
+			$('#results').html(data);
+		},
+		error:  function(xhr, str){
+			alert('Возникла ошибка: ' + xhr.responseCode);
+		}
+	});
+	$('.adminfot').css('display', 'inline');
+	markerGroup.eachLayer(function(layer) {
+//		console.log(layer.options);
+		if(layer.options.ids == $('.editidmet').val()){
+			layer.setOpacity(0);
+			layer.setZIndexOffset(2);
+			layer.closePopup();
+		}
+	});
+	$('#getadminfoto').html('');
+}
+
+function getRandomFloat(min, max) {
+	return Math.random() * (max - min) + min;
+}
+
+function gotogod(god){
+	lat = map.getCenter().lat;
+	lng = map.getCenter().lng;
+	var zoom	 = map.getZoom();
+	window.location.replace("https://cheboksary.ws/god/" + god + "/#xy=" + lat + "," + lng + "&z=" + zoom + "&t=" + typemap);
+	return false;
+}
+
+function closeIFrame(){
+//	$('.fancybox-iframed').remove();
+	aaad = $('.fancybox-iframe')
+	var ifr = parent.aaad;	ifr.parentNode.removeChild(ifr);
+}
+
+</script>
+
+
+	</div>
+</div>
+<div class='pdasb'>
+	<div>
+		<!--LiveInternet counter--><noindex><script type="text/javascript">document.write("<a href='https://www.liveinternet.ru/click;cheb_ru' "+"target=_blank><img src='https://counter.yadro.ru/hit;cheb_ru?t11.18;r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";"+Math.random()+"' alt='' title='LiveInternet: показано число просмотров за 24"+" часа, посетителей за 24 часа и за сегодня' "+"border=0 width=88 height=31></a>")</script></noindex><!--/LiveInternet-->
+		<!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=23646859&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/23646859/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="23646859" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(23646859, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/23646859" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+	</div>
+	<div>Свои предложения и замечания по карте высказывайте здесь: <a href="//forum.na-svyazi.ru/?showtopic=456346&view=getnewpost" target="_blank">//forum.na-svyazi.ru/?showtopic=456346</a>.<br>Использования материалов сайта для создания схем проезда допускается лишь с приведением ссылки на сайт <a href="//cheboksary.ws"><u>Карта г.Чебоксары</u></a>. В иных случаях требуется письменное согласие авторов.
+</div>
+
+<noindex><div class="hide-layer layer-size butt-close-main-menu"></div>
+<div class="menu-layer layer-size">
+	<div class="cl-mm butt-close-main-menu"></div>
+	<div class="bg-mm"></div>
+	<div class="cont-mm">
+		<ul class="rubrics menuinlinepda" style='padding-top:1em'>
+			<li><a href='/'>Главная</a></li>
+			<li><a href='/login.php?from=https://cheboksary.ws/'>Привет, <b>Guest</b>!</a> <a href='/login.php?from=https://cheboksary.ws/' rel='nofollow'>вход</a>, <a href='https://forum.na-svyazi.ru/?act=Reg&CODE=00'>регистрация</a></li><li><a href='https://cheb.ru/zakaz.htm'>Реклама на сайте</a></li>		</ul>
+		<ul class="rubrics menuinlinepda">
+			<li class='rubricstitle'><span>На карте</span></li>
+			<li><a href='/air/'>Фото с высоты</a></li>
+			<li><a href='/history/'>Старые фото</a></li>
+			<li><a href='https://cheb.ws/ned/?map=1'>Недвижимость</a></li>
+			<li><a href='/probki-ya.htm'>Пробки</a></li>
+			<li><a href='/nakarte/ulica/#xy=56.14298533598165,47.25190758705139&z=16&t=coordinate'>Улицы на карте</a></li>
+		</ul>
+		<ul class="rubrics menuinlinepda">
+			<li class='rubricstitle'><span>Сайты</span></li>
+			<li><a href='https://cheb.ru/doma/'>Список улиц и домов</a></li>
+			<li><a href='//forum.zarulem.ws'>Автофорумы</a></li>
+			<li><a href='//cheb.ws'>Недвижимость Чебоксары</a></li>
+			<li><a href='//afisha.cheb.ru'>Афиша</a>, <a href='//afisha.cheb.ru/kino/'>Киноафиша</a></li>
+			<li><a href='https://foto.cheb.ru'>Фотогалерея</a> <sup>278353</sup></li>
+			<li><a href="https://forum.na-svyazi.ru">Форумы</a></li>
+		</ul>
+		 <ul class="rubrics menuinlinepda">
+			<li class='rubricstitle'><span>О Чебоксарах</span></li>
+			<li><a href='https://pogoda21.ru' rel="nofollow">Погода в Чувашии</a></li>
+			<li><a href="https://forum.na-svyazi.ru/?showforum=74">Работа</a></li>
+			<li><a href='https://cheb.ru/chuvashia/'>Районы Чувашии</a></li>
+			<li><a href='https://cheb.ru/obmen.htm'>Курсы валют</a></li>
+		 </ul>
+	</div>
+	<div class="butt b-close-mm butt-close-main-menu"><img src="https://afisha.cheb.ru/i/icon-close-white.png"></div>
+</div></noindex>
+
+<script src="https://cheboksary.ws/js/footer.js?ver=2.4"></script>
+<!--</div></div>-->
+
+<style>
+.leaflet-popup-content-wrapper div.leaflet-popup-content {
+	width: auto !important;
+	-webkit-transition: all 1s !important;
+	-moz-transition: all 1s !important;
+	-o-transition: all 1s !important;
+	transition: all 1s !important;
+}
+</style>
+
+<script>
+$(function(){
+	heightm = $(window).height();
+	if(heightm > 900){
+		heightm = heightm - 140-28;
+		$('#map').css('height', heightm+'px');
+		map.invalidateSize();
+	}
+});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26244899-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-26244899-2');
+</script>
+
+<style>
+.leaflet-popup-content-wrapper div.leaflet-popup-content {
+	min-width: 250px !important;
+	width: auto !important;
+}
+.menu_top {
+	margin: 0px;
+}
+.activel {
+    background-color: #ffbe54 !important;
+}
+.lliner {
+	position: relative;
+	z-index: 1000000;
+	background: rgb(255, 255, 255) url("//cheboksary.ws/i/img/icon-liner.png") no-repeat scroll center center;
+	top: 5px;
+	width: 18px;
+	height: 18px;
+}
+@media screen and (max-width: 540px) {
+	div.mySelectorcats.leaflet-control, mySelectorfoto div.mySelectorfoto.leaflet-control {
+		display: block;
+		clear: both !important;
+		float: right !important;
+	}
+}
+div.tit {
+	max-width: 200px;
+}
+.leaflet-right {
+	z-index: 200000;
+}
+.leaflet-right:after, .leaflet-right:before {
+	content: '';
+	clear: both;
+	float: none;
+	display: block;
+}
+</style>
+<link rel="stylesheet" href="https://cheb.ru/css/jquery.lazyloadxt.spinner.css?ver=2.4">
+<script src="https://cheb.ru/js/jquery.lazyloadxt.js?ver=2.4" async></script>
+<script type='text/javascript' src='https://cheb.ru/js/pda.js?ver=2.33' async></script>
+</body>
+</html>
